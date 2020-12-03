@@ -1,5 +1,8 @@
 # Freeplane WikdShell Extension Add On
 
+> [!IMPORTANT]
+> THIS IS STILL WORK IN PROGRESS. THERE IT ISN'T AN ADD ON YET. THE SCRIPTS WORKS FINE, BUT I HAVEN'T PACKED INTO AN ADD ON YET. AS SOON AS I DOES I WILL UPDATE THIS FILE AND PUBLISH AN UPDATE IN THE FREEPLANE'S FORUM
+
 The **WikdShell Extension** add_on for Freeplane adds some functionalities to the original WikdShell add_on.
 
 WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.
