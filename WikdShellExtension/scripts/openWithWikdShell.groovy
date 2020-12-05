@@ -50,6 +50,7 @@ def openWikdShell(inPut, source, boolean fs = fullScreen) {
     console.setVariable('source', source)
     console.setVariable('initialNodeID', node.id)
     console.setVariable('targetNodeID', node.id)
+    console.opciones[0] = "Node '${node.text}'".toString()
     console.run(node.map.name)
     switch(inPut?.class){
         case File:

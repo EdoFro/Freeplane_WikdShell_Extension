@@ -10,7 +10,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -45,7 +45,7 @@
 <icon BUILTIN="yes"/>
 </stylenode>
 <stylenode TEXT="GroovyNode" COLOR="#000000" BACKGROUND_COLOR="#66cccc" STYLE="rectangle" SHAPE_HORIZONTAL_MARGIN="5.0 pt">
-<icon BUILTIN="executable"/>
+<icon BUILTIN="emoji-1F951"/>
 <font NAME="Consolas"/>
 </stylenode>
 </stylenode>
@@ -76,36 +76,8 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="HEADINGS"/>
-<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_369156413">
-<edge COLOR="#ff0000"/>
-<node TEXT="" ID="ID_1206828491">
-<node ID="ID_1354189218"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p data-line="5" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
-      <font color="#000000">The&nbsp;<strong>WikdShell Extension</strong>&nbsp;add_on for&nbsp;<strong>Freeplane</strong>&nbsp;adds some functionalities to the original&nbsp;<strong>WikdShell</strong>&nbsp;add_on. </font>
-    </p>
-    <p data-line="7" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
-      <strong><font color="#000000">WikdShell</font></strong><font color="#000000">&nbsp;is a great add_on that gives the user the posibility to open a&nbsp;<strong>Groovy console</strong>&nbsp;directly from&nbsp;<strong>Freeplane</strong>&nbsp;to create, edit and try&nbsp;<strong>scripts</strong>&nbsp;that interact directly with the&nbsp;<strong>mindmaps</strong>. </font>
-    </p>
-    <p data-line="9" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
-      <font color="#000000">This way you can&nbsp;<strong>add functionalities</strong>&nbsp;to Freeplane,&nbsp;<strong>automatize</strong>&nbsp;repetitive&nbsp;<strong>tasks</strong>&nbsp;and&nbsp;<strong>improve</strong>&nbsp;your&nbsp;<strong>productivity</strong>&nbsp;when using mindmaps. </font>
-    </p>
-    <p data-line="11" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
-      <font color="#000000">The present AddOn gives you the possibility to&nbsp;<strong>&quot;save&quot; the scripts</strong>&nbsp;you create&nbsp;<strong>as nodes in your maps</strong>. This way you can save all little tests, one time scripts or map specific scripts in your own organized way,&nbsp;<strong>without overflowing</strong>&nbsp;your scripts folders and&nbsp;<strong>Freeplane's scripts submenu</strong>.</font>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
+<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_352669836">
 <edge COLOR="#ff0000"/>
 <node TEXT="in Freeplane Menu" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
@@ -190,7 +162,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="export the edited script to&#xa;the node&apos;s note (**)" ID="ID_1712457333"><richcontent TYPE="NOTE">
+<node TEXT="exports the edited script to&#xa;the node&apos;s note (**)" ID="ID_1712457333"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -198,10 +170,11 @@
   </head>
   <body>
     <p>
-      (**) in this case, the node gets &quot;marked&quot; as a &quot;groovy node&quot; automatically by the AddOn
+      (**) in this case, the node gets automatically &quot;marked&quot; as a &quot;groovy node&quot; by the AddOn
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 <node TEXT="options:" ID="ID_848571632"><richcontent TYPE="DETAILS">
@@ -217,21 +190,35 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="&quot;Select destination node:&quot;" ID="ID_691506876" STYLE="bubble">
+<node TEXT="Select destination node:" ID="ID_691506876" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt">
 <font BOLD="true"/>
-<node TEXT="&quot;Node &apos;xxx&apos;&quot;" ID="ID_574096632" STYLE="bubble" MAX_WIDTH="157.4999954849483 pt" MIN_WIDTH="157.4999954849483 pt">
+<node TEXT="Node &apos;xxx&apos;" ID="ID_574096632" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
-<node TEXT="the node where the script was last saved" ID="ID_702325878"/>
+<node TEXT="the node where the script was last saved" ID="ID_702325878"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      when opening WikdShell this node is the same as the initial node
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
-<node TEXT="&quot;initial node&quot;" ID="ID_734608819" STYLE="bubble" MAX_WIDTH="157.4999954849483 pt" MIN_WIDTH="157.4999954849483 pt">
+</node>
+<node TEXT="initial node" ID="ID_734608819" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that was selected when you opened the WikdShell" ID="ID_1773629009"/>
 </node>
-<node TEXT="&quot;currently selected node&quot;" ID="ID_1091750308" STYLE="bubble" MAX_WIDTH="157.4999954849483 pt" MIN_WIDTH="157.4999954849483 pt">
+<node TEXT="currently selected node" ID="ID_1091750308" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that is currently selected node." ID="ID_1322712085"/>
 </node>
-<node TEXT="&quot;selected node when console&apos;s script was last applied&quot;" ID="ID_1392271653" STYLE="bubble" MAX_WIDTH="157.4999954849483 pt" MIN_WIDTH="157.4999954849483 pt">
+<node TEXT="selected node when console&apos;s script was last applied" ID="ID_1392271653" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that was selected the last time you run the script in the console" ID="ID_1695698895"><richcontent TYPE="NOTE">
 
@@ -284,9 +271,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Formating" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_751311327">
+<node TEXT="First steps" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_51519781">
 <edge COLOR="#ff0000"/>
-<node TEXT="prueba.groovy" ID="ID_485374676"><richcontent TYPE="NOTE">
+<richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -294,28 +281,51 @@
   </head>
   <body>
     <p>
-      import WSE
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      c.statusInfo = WSE.isGroovyNode(node)
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      // hola
+      tutorials to get the idea
     </p>
   </body>
 </html>
+
+</richcontent>
+<node TEXT="editing an existing script in a node" ID="ID_73401960">
+<node TEXT="This node has a little script in its note --&gt;" ID="ID_1422462306">
+<node TEXT="Hello world dialog.groovy" ID="ID_1260831344"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      // this an example script:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // 1. run it (menu Script/Run)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def name = 'World'&nbsp;&nbsp;// 2. change the string and run it again&nbsp;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ui.informationMessage(&quot;Hello $name !!!&quot;)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // 3. send the edited script back to the source node
+    </p>
+  </body>
+</html>
+
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -329,9 +339,21 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
-<node TEXT="prueba.groovy" ID="ID_430451976"><richcontent TYPE="NOTE">
+</node>
+<node TEXT="1. select it and apply command &apos;Open with WikdShell Console&apos;" ID="ID_599775142"/>
+<node TEXT="" ID="ID_1653713446">
+<hook NAME="FirstGroupNode"/>
+</node>
+<node TEXT="2. run the script" ID="ID_1970951912"/>
+<node TEXT="3. edit the script" ID="ID_1463458904"/>
+<node TEXT="" ID="ID_1598953899">
+<hook NAME="SummaryNode"/>
+<hook NAME="AlwaysUnfoldedNode"/>
+<node TEXT="to learn how to use the console look here" ID="ID_1623383222">
+<node TEXT="http://www.groovy-lang.org/groovyconsole.html" ID="ID_1534493696" LINK="http://www.groovy-lang.org/groovyconsole.html"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -339,25 +361,60 @@
   </head>
   <body>
     <p>
-      import WSE
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      c.statusInfo= WSE.isGroovyNode(node)
+      groovyConsole - the Groovy Swing console
     </p>
   </body>
 </html>
 </richcontent>
 </node>
-<node TEXT="otro" ID="ID_1879211400"><richcontent TYPE="NOTE">
+</node>
+</node>
+<node TEXT="4. send the edited script back to the node&apos;s note" ID="ID_1319307038"/>
+<node TEXT="5. close the console" ID="ID_1594786637"/>
+<node TEXT="6. repeat all again&#xa;but now save the script to this node --&gt;" ID="ID_1358467152">
+<node TEXT="edited Hello world dialog" ID="ID_844915556"/>
+</node>
+</node>
+<node TEXT="creating new script" ID="ID_1690753984">
+<node TEXT="1. create a new node &apos;myScript&apos;" ID="ID_1609996883"/>
+<node TEXT="2. select it and apply command &apos;Open with WikdShell Console&apos;" ID="ID_690300155"/>
+<node TEXT="3 create a new script" ID="ID_1773890128">
+<node TEXT="//for example:&#xa;node.text = node.text.reverse()" ID="ID_1576968386"/>
+</node>
+<node TEXT="4 send the edited script to the node" ID="ID_1700736465"/>
+</node>
+</node>
+<node TEXT="to node&apos;s Note or to &apos;script1&apos; attribute?" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1134895826">
+<edge COLOR="#ff0000"/>
+<node TEXT="node&apos;s Note" ID="ID_1039446">
+<node TEXT="" ID="ID_877639070">
+<icon BUILTIN="very_positive"/>
+<node TEXT="node&apos;s note is easier to access and edit" ID="ID_1067038829"/>
+<node TEXT="is easier to do searching" ID="ID_1384179528"/>
+</node>
+<node TEXT="" ID="ID_674875392">
+<icon BUILTIN="very_negative"/>
+<node TEXT="it can&apos;t be directly executed" ID="ID_1838511953"/>
+<node TEXT="node&apos;s note can&apos;t be used to take notes" ID="ID_18445254"/>
+</node>
+</node>
+<node TEXT="&apos;script1&apos; attribute" ID="ID_108868412">
+<node TEXT="" ID="ID_1235359369">
+<icon BUILTIN="very_positive"/>
+<node TEXT="you can directly run the script with command in menu Tools / Execute selected node script" ID="ID_786753897"/>
+<node TEXT="you can directly edit it and test it with command in menu Tools / Edit Scripts..." ID="ID_1458154775"/>
+<node TEXT="node&apos;s note can be used to take notes" ID="ID_1933989375"/>
+</node>
+<node TEXT="" ID="ID_1354532807">
+<icon BUILTIN="very_negative"/>
+<node TEXT="you can&apos;t directly execute the script from one node to modify others." ID="ID_567304972"/>
+</node>
+</node>
+<node TEXT="I prefer to write the scripts in the node&apos;s note because it&apos;s easier for me to look at them using the note panel, but the &apos;script1&apos; attribute can be a better alternative in some cases" ID="ID_1820388139"/>
+</node>
+<node TEXT="some example scripts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1759050976">
+<edge COLOR="#ff0000"/>
+<richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -365,28 +422,26 @@
   </head>
   <body>
     <p>
-      import WSE
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      c.statusInfo = WSE.isGroovyNode(node)
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      // hola que tal
+      I will put some example scripts in here
     </p>
   </body>
 </html>
+
+</richcontent>
+<node TEXT="just for fun" ID="ID_139385750">
+<node TEXT="reverse text from node" ID="ID_1358363057"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      node.text = node.text.reverse()
+    </p>
+  </body>
+</html>
+
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -400,17 +455,179 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
-<node TEXT="otro más" ID="ID_705701464">
-<attribute NAME="script1" VALUE="import WSE&#xa;&#xa;&#xa;&#xa;c.statusInfo = WSE.isGroovyNode(node)&#xa;&#xa;// hola que tal"/>
-</node>
-<node TEXT="xx" ID="ID_1964746417">
-<attribute NAME="script1" VALUE="import WSE&#xa;&#xa;&#xa;&#xa;c.statusInfo = WSE.isGroovyNode(node)&#xa;&#xa;// hola que tal"/>
+<node TEXT="script in attributte" ID="ID_421297504">
+<attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
 </node>
 </node>
-<node TEXT="Examples" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1759050976">
+</node>
+<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_369156413">
 <edge COLOR="#ff0000"/>
+<node ID="ID_1354189218"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p data-line="5" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
+      <font color="#000000">The&nbsp;<strong>WikdShell Extension</strong>&nbsp;add_on for&nbsp;<strong>Freeplane</strong>&nbsp;adds some functionalities to the original&nbsp;<strong>WikdShell</strong>&nbsp;add_on. </font>
+    </p>
+    <p data-line="7" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
+      <strong><font color="#000000">WikdShell</font></strong><font color="#000000">&nbsp;is a great add_on that gives the user the posibility to open a&nbsp;<strong>Groovy console</strong>&nbsp;directly from&nbsp;<strong>Freeplane</strong>&nbsp;to create, edit and try&nbsp;<strong>scripts</strong>&nbsp;that interact directly with the&nbsp;<strong>mindmaps</strong>. </font>
+    </p>
+    <p data-line="9" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
+      <font color="#000000">This way you can&nbsp;<strong>add functionalities</strong>&nbsp;to Freeplane,&nbsp;<strong>automatize</strong>&nbsp;repetitive&nbsp;<strong>tasks</strong>&nbsp;and&nbsp;<strong>improve</strong>&nbsp;your&nbsp;<strong>productivity</strong>&nbsp;when using mindmaps. </font>
+    </p>
+    <p data-line="11" class="code-line" style="margin-top: 0px; margin-bottom: 0; color: rgb(212, 212, 212); font-family: -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, system-ui, Ubuntu, Droid Sans, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px">
+      <font color="#000000">The present AddOn gives you the possibility to&nbsp;<strong>&quot;save&quot; the scripts</strong>&nbsp;you create&nbsp;<strong>as nodes in your maps</strong>. This way you can save all little tests, one time scripts or map specific scripts in your own organized way,&nbsp;<strong>without overflowing</strong>&nbsp;your scripts folders and&nbsp;<strong>Freeplane's scripts submenu</strong>.</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="About the Croovy Console" ID="ID_787303315">
+<node TEXT="http://www.groovy-lang.org/groovyconsole.html" ID="ID_1461896822" LINK="http://www.groovy-lang.org/groovyconsole.html"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      groovyConsole - the Groovy Swing console
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="&apos;Groovy nodes&apos; and Formating" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_751311327">
+<edge COLOR="#ff0000"/>
+<node TEXT="For this map I defined a node style for groovy nodes and a condtional formating rule to identify them:" ID="ID_306937081"/>
+<node TEXT="I defined a new user style" ID="ID_536457057"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      using menu Format / Manage Styles / Edit Styles
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="GroovyNode" STYLE_REF="GroovyNode" ID="ID_1423752780"/>
+</node>
+<node TEXT="and added a Map conditional style" ID="ID_1346000498"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      using menu
+    </p>
+    <p>
+      Format / Manage Styles / Manage conditional styles for map
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Condition (Filter)" ID="ID_1444925104">
+<node TEXT="Script filter" ID="ID_471600222">
+<node TEXT="WSE.isGroovyNode(node)" ID="ID_1838927223"/>
+</node>
+</node>
+<node TEXT="Style" ID="ID_998512892">
+<node TEXT="GroovyNode" ID="ID_156615250"/>
+</node>
+</node>
+<node TEXT="These are the conditions to define/recognize a node as a &quot;groovy node&quot;:" ID="ID_1821907409"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      try it yourself adding new nodes
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="node text ends with &quot;.groovy&quot;" ID="ID_1275123559" MIN_WIDTH="6.0 cm">
+<node TEXT="example.groovy" ID="ID_1778018916"/>
+<node TEXT="test it yourself: add a new node that ends with &quot;.groovy&quot;" ID="ID_1834977468"/>
+</node>
+<node TEXT="node details starts with &quot;.groovy&quot;" ID="ID_1884510639" MIN_WIDTH="6.0 cm">
+<node TEXT="example" ID="ID_920876527"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="example" ID="ID_397042400"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy (just an example)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="example" ID="ID_1147366405"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+    <p>
+      author: me
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="node has a &apos;script1&apos; attribute" ID="ID_1867851751" MIN_WIDTH="6.0 cm">
+<node TEXT="example3" ID="ID_1070150946">
+<attribute NAME="script1" VALUE="x"/>
+</node>
+</node>
+<node TEXT="node has a link to a groovy file" ID="ID_937959535" MIN_WIDTH="6.0 cm">
+<node TEXT="openSampleMap" ID="ID_702890566" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_WikdShell_Extension/WikdShellExtension/scripts/openSampleMap.groovy"/>
+</node>
+</node>
 </node>
 </node>
 </map>
