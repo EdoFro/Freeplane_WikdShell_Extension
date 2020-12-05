@@ -106,6 +106,7 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="description" POSITION="left" ID="ID_1227561251">
 <edge COLOR="#ff0000"/>
@@ -127,6 +128,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146"/>
 </node>
@@ -144,6 +146,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="v0.0.1" ID="ID_816109358">
 <node TEXT="initial release" ID="ID_796313183"/>
@@ -169,6 +172,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1153422672"/>
 </node>
@@ -189,6 +193,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 <node TEXT="default.properties" POSITION="left" ID="ID_555929997">
@@ -213,6 +218,7 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 </node>
 <node TEXT="translations" POSITION="left" ID="ID_1830875841">
@@ -240,6 +246,7 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="en" ID="ID_1684312874">
 <attribute_layout NAME_WIDTH="167.24999501556172 pt" VALUE_WIDTH="133.49999602139007 pt"/>
@@ -262,6 +269,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithWikdShell.groovy"/>
@@ -389,6 +397,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="openWithWikdShell.groovy" ID="ID_1873361436">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
@@ -453,6 +462,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 <node TEXT="zips" POSITION="right" ID="ID_580554032">
@@ -493,6 +503,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="doc" ID="ID_180076950"/>
 <node TEXT="lib" ID="ID_48988928"/>
@@ -531,6 +542,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 </node>

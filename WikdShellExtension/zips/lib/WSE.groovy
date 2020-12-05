@@ -27,7 +27,7 @@ class WSE{
         n[attributeForExtensions]?:null
     }
     def static extensionFromDetails(n){
-        n.details?[0]=='.'?n.details.drop(1).takeBefore(' ').takeBefore('\n')?:n.details.drop(1).takeBefore('\n')?:n.details.drop(1).takeBefore(' ')?:n.details.drop(1):null
+        n.details?.size()>1?n.details?[0]=='.'?n.details.drop(1).takeBefore(' ').takeBefore('\n')?:n.details.drop(1).takeBefore('\n')?:n.details.drop(1).takeBefore(' ')?:n.details.drop(1):null:null
     }
     def static extensionFromText(n){
         n.text.reverse().takeBefore('.').reverse()

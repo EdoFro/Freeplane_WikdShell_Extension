@@ -1,6 +1,6 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="WikdShell Extension" FOLDED="false" ID="ID_275097868" CREATED="1606913410305" MODIFIED="1607040163989" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
+<node TEXT="WikdShell Extension" ID="ID_275097868" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
     <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
@@ -108,7 +108,7 @@
 </html>
 
 </richcontent>
-<node TEXT="description" POSITION="left" ID="ID_1227561251" CREATED="1606913456589" MODIFIED="1607039741090">
+<node TEXT="description" POSITION="left" ID="ID_1227561251">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE">
 
@@ -128,10 +128,11 @@
     </p>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146" CREATED="1607030280235" MODIFIED="1607030309687"/>
+<node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146"/>
 </node>
-<node TEXT="changes" POSITION="left" ID="ID_1937374697" CREATED="1606913456604" MODIFIED="1607039741100">
+<node TEXT="changes" POSITION="left" ID="ID_1937374697">
 <edge COLOR="#0000ff"/>
 <richcontent TYPE="NOTE">
 
@@ -145,12 +146,13 @@
     </p>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="v0.0.1" ID="ID_816109358" CREATED="1607029905968" MODIFIED="1607029911879">
-<node TEXT="initial release" ID="ID_796313183" CREATED="1607029915624" MODIFIED="1607029922672"/>
+<node TEXT="v0.0.1" ID="ID_816109358">
+<node TEXT="initial release" ID="ID_796313183"/>
 </node>
 </node>
-<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_646377602" CREATED="1606913456619" MODIFIED="1607039741109">
+<node TEXT="license" POSITION="left" ID="ID_646377602">
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="NOTE">
 
@@ -170,10 +172,11 @@
     </p>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1153422672" CREATED="1606913456632" MODIFIED="1606913456634"/>
+<node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1153422672"/>
 </node>
-<node TEXT="preferences.xml" POSITION="left" ID="ID_1270111565" CREATED="1606913456644" MODIFIED="1607039741119">
+<node TEXT="preferences.xml" POSITION="left" ID="ID_1270111565">
 <edge COLOR="#ff00ff"/>
 <richcontent TYPE="NOTE">
 
@@ -190,9 +193,10 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
-<node TEXT="default.properties" POSITION="left" ID="ID_555929997" CREATED="1606913456656" MODIFIED="1607039741128">
+<node TEXT="default.properties" POSITION="left" ID="ID_555929997">
 <edge COLOR="#00ffff"/>
 <richcontent TYPE="NOTE">
 
@@ -214,9 +218,10 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 </node>
-<node TEXT="translations" POSITION="left" ID="ID_1830875841" CREATED="1606913456671" MODIFIED="1607039741138">
+<node TEXT="translations" POSITION="left" ID="ID_1830875841">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -241,15 +246,16 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="en" ID="ID_1684312874" CREATED="1606913456683" MODIFIED="1607032550103">
+<node TEXT="en" ID="ID_1684312874">
 <attribute_layout NAME_WIDTH="167.24999501556172 pt" VALUE_WIDTH="133.49999602139007 pt"/>
 <attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
 <attribute NAME="addons.${name}.openWithWikdShell" VALUE="Open with WikdShell console"/>
 <attribute NAME="addons.${name}.openSampleMap" VALUE="Open sample map"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="left" ID="ID_1341329996" CREATED="1606913456729" MODIFIED="1607039741155">
+<node TEXT="deinstall" POSITION="left" ID="ID_1341329996">
 <edge COLOR="#00007c"/>
 <richcontent TYPE="NOTE">
 
@@ -263,6 +269,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithWikdShell.groovy"/>
@@ -271,7 +278,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/lib/WSE.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WSE.groovy"/>
 </node>
-<node TEXT="scripts" POSITION="right" ID="ID_1411461009" CREATED="1606913456752" MODIFIED="1607039741171">
+<node TEXT="scripts" POSITION="right" ID="ID_1411461009">
 <edge COLOR="#007c00"/>
 <richcontent TYPE="NOTE">
 
@@ -390,8 +397,9 @@
     </p>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="openWithWikdShell.groovy" ID="ID_1873361436" CREATED="1606913954900" MODIFIED="1607039667447">
+<node TEXT="openWithWikdShell.groovy" ID="ID_1873361436">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithWikdShell"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -403,7 +411,7 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
-<node TEXT="openSampleMap.groovy" ID="ID_684473611" CREATED="1607029870313" MODIFIED="1607030755588">
+<node TEXT="openSampleMap.groovy" ID="ID_684473611">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openSampleMap"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -416,7 +424,7 @@
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
 </node>
-<node TEXT="lib" POSITION="right" ID="ID_1853082953" CREATED="1606913456777" MODIFIED="1607039741305">
+<node TEXT="lib" POSITION="right" ID="ID_1853082953">
 <edge COLOR="#7c007c"/>
 <richcontent TYPE="NOTE">
 
@@ -454,9 +462,10 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
-<node TEXT="zips" POSITION="right" ID="ID_580554032" CREATED="1606913456791" MODIFIED="1607039741316">
+<node TEXT="zips" POSITION="right" ID="ID_580554032">
 <edge COLOR="#007c7c"/>
 <richcontent TYPE="NOTE">
 
@@ -494,11 +503,12 @@
     </p>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="doc" ID="ID_180076950" CREATED="1607032355048" MODIFIED="1607032355050"/>
-<node TEXT="lib" ID="ID_48988928" CREATED="1607037913472" MODIFIED="1607037913626"/>
+<node TEXT="doc" ID="ID_180076950"/>
+<node TEXT="lib" ID="ID_48988928"/>
 </node>
-<node TEXT="images" POSITION="right" ID="ID_1666837925" CREATED="1606913456803" MODIFIED="1607039741340">
+<node TEXT="images" POSITION="right" ID="ID_1666837925">
 <edge COLOR="#7c7c00"/>
 <richcontent TYPE="NOTE">
 
@@ -532,6 +542,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 </node>
