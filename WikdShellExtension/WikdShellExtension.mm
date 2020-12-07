@@ -1,9 +1,9 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="WikdShell Extension" ID="ID_275097868" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
+<node TEXT="WikdShell Extension" FOLDED="false" ID="ID_275097868" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -108,7 +108,7 @@
 </html>
 
 </richcontent>
-<node TEXT="description" POSITION="left" ID="ID_1227561251">
+<node TEXT="description" FOLDED="true" POSITION="left" ID="ID_1227561251">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE">
 
@@ -132,7 +132,7 @@
 </richcontent>
 <node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146"/>
 </node>
-<node TEXT="changes" POSITION="left" ID="ID_1937374697">
+<node TEXT="changes" FOLDED="true" POSITION="left" ID="ID_1937374697">
 <edge COLOR="#0000ff"/>
 <richcontent TYPE="NOTE">
 
@@ -148,11 +148,11 @@
 </html>
 
 </richcontent>
-<node TEXT="v0.0.1" ID="ID_816109358">
+<node TEXT="v0.0.1" FOLDED="true" ID="ID_816109358">
 <node TEXT="initial release" ID="ID_796313183"/>
 </node>
 </node>
-<node TEXT="license" POSITION="left" ID="ID_646377602">
+<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_646377602">
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="NOTE">
 
@@ -221,7 +221,7 @@
 
 </richcontent>
 </node>
-<node TEXT="translations" POSITION="left" ID="ID_1830875841">
+<node TEXT="translations" FOLDED="true" POSITION="left" ID="ID_1830875841">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -278,7 +278,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/lib/WSE.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WSE.groovy"/>
 </node>
-<node TEXT="scripts" POSITION="right" ID="ID_1411461009">
+<node TEXT="scripts" FOLDED="true" POSITION="right" ID="ID_1411461009">
 <edge COLOR="#007c00"/>
 <richcontent TYPE="NOTE">
 
@@ -465,7 +465,7 @@
 
 </richcontent>
 </node>
-<node TEXT="zips" POSITION="right" ID="ID_580554032">
+<node TEXT="zips" FOLDED="true" POSITION="right" ID="ID_580554032">
 <edge COLOR="#007c7c"/>
 <richcontent TYPE="NOTE">
 

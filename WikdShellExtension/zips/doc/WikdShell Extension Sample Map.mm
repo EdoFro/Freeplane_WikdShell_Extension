@@ -1,6 +1,6 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="WikdShell Extension&#xa;Sample Map" ID="ID_1566103016" STYLE="oval">
+<node TEXT="WikdShell Extension&#xa;Guide" FOLDED="false" ID="ID_1566103016" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle">
     <conditional_styles>
@@ -10,7 +10,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -78,10 +78,10 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="HEADINGS"/>
 <hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_352669836">
+<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_352669836">
 <edge COLOR="#ff0000"/>
-<node TEXT="in Freeplane Menu" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
-<node TEXT="open With WikdShell" ID="ID_1187261389" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="in Freeplane Menu" FOLDED="true" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
+<node TEXT="open With WikdShell" FOLDED="true" ID="ID_1187261389" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -95,7 +95,7 @@
 </html>
 </richcontent>
 <node TEXT="it loads the script from node" ID="ID_960375894"/>
-<node TEXT="if, when calling the command, the selected node has:" ID="ID_1632658801">
+<node TEXT="if, when calling the command, the selected node has:" FOLDED="true" ID="ID_1632658801">
 <node TEXT="a link to a groovy file" ID="ID_1812265287"/>
 <node TEXT="a &apos;script1&apos; attribute" ID="ID_1029761900"/>
 <node TEXT="or a groovy script in its note (*)" ID="ID_1123248821"><richcontent TYPE="NOTE">
@@ -132,7 +132,7 @@
 </node>
 <node TEXT="then the groovy console opens with that script in its editing pane" ID="ID_339862676"/>
 </node>
-<node TEXT="open Sample Map" ID="ID_1328836311" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="open Sample Map" FOLDED="true" ID="ID_1328836311" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -148,8 +148,8 @@
 <node TEXT="opens this map" ID="ID_1745439869"/>
 </node>
 </node>
-<node TEXT="in WikdShell Groovy Console" ID="ID_279370205" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
-<node TEXT="send to node&apos;s NOTE" ID="ID_897321472" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="in WikdShell Groovy Console" FOLDED="true" ID="ID_279370205" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
+<node TEXT="send to node&apos;s NOTE" FOLDED="true" ID="ID_897321472" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -174,10 +174,9 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
-<node TEXT="options:" ID="ID_848571632"><richcontent TYPE="DETAILS">
+<node TEXT="options:" FOLDED="true" ID="ID_848571632"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -190,9 +189,9 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Select destination node:" ID="ID_691506876" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt">
+<node TEXT="Select destination node:" FOLDED="true" ID="ID_691506876" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt">
 <font BOLD="true"/>
-<node TEXT="Node &apos;xxx&apos;" ID="ID_574096632" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="Node &apos;xxx&apos;" FOLDED="true" ID="ID_574096632" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the node where the script was last saved" ID="ID_702325878"><richcontent TYPE="NOTE">
 
@@ -206,19 +205,18 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
-<node TEXT="initial node" ID="ID_734608819" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="initial node" FOLDED="true" ID="ID_734608819" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that was selected when you opened the WikdShell" ID="ID_1773629009"/>
 </node>
-<node TEXT="currently selected node" ID="ID_1091750308" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="currently selected node" FOLDED="true" ID="ID_1091750308" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that is currently selected node." ID="ID_1322712085"/>
 </node>
-<node TEXT="selected node when console&apos;s script was last applied" ID="ID_1392271653" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="selected node when console&apos;s script was last applied" FOLDED="true" ID="ID_1392271653" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that was selected the last time you run the script in the console" ID="ID_1695698895"><richcontent TYPE="NOTE">
 
@@ -238,7 +236,7 @@
 </node>
 </node>
 </node>
-<node TEXT="send to node&apos;s SCRIPT1" ID="ID_1675901249" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="send to node&apos;s SCRIPT1" FOLDED="true" ID="ID_1675901249" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -271,7 +269,7 @@
 </node>
 </node>
 </node>
-<node TEXT="First steps" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_51519781">
+<node TEXT="First steps" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_51519781">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="DETAILS">
 
@@ -285,9 +283,8 @@
     </p>
   </body>
 </html>
-
 </richcontent>
-<node TEXT="editing an existing script in a node" ID="ID_73401960">
+<node TEXT="editing an existing script in a node" FOLDED="true" ID="ID_73401960">
 <node TEXT="This node has a little script in its note --&gt;" ID="ID_1422462306">
 <node TEXT="Hello world dialog.groovy" ID="ID_1260831344"><richcontent TYPE="NOTE">
 
@@ -325,7 +322,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -339,7 +335,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -375,16 +370,16 @@
 <node TEXT="edited Hello world dialog" ID="ID_844915556"/>
 </node>
 </node>
-<node TEXT="creating new script" ID="ID_1690753984">
+<node TEXT="creating new script" FOLDED="true" ID="ID_1690753984">
 <node TEXT="1. create a new node &apos;myScript&apos;" ID="ID_1609996883"/>
 <node TEXT="2. select it and apply command &apos;Open with WikdShell Console&apos;" ID="ID_690300155"/>
 <node TEXT="3 create a new script" ID="ID_1773890128">
-<node TEXT="//for example:&#xa;node.text = node.text.reverse()" ID="ID_1576968386"/>
+<node TEXT="//for example:&#xa;node.text = node.text.toUpperCase()" ID="ID_1576968386"/>
 </node>
 <node TEXT="4 send the edited script to the node" ID="ID_1700736465"/>
 </node>
 </node>
-<node TEXT="to node&apos;s Note or to &apos;script1&apos; attribute?" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1134895826">
+<node TEXT="to node&apos;s Note or to &apos;script1&apos; attribute?" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_1134895826">
 <edge COLOR="#ff0000"/>
 <node TEXT="node&apos;s Note" ID="ID_1039446">
 <node TEXT="" ID="ID_877639070">
@@ -410,26 +405,12 @@
 <node TEXT="you can&apos;t directly execute the script from one node to modify others." ID="ID_567304972"/>
 </node>
 </node>
-<node TEXT="I prefer to write the scripts in the node&apos;s note because it&apos;s easier for me to look at them using the note panel, but the &apos;script1&apos; attribute can be a better alternative in some cases" ID="ID_1820388139"/>
+<node TEXT="I prefer to write the scripts in the node&apos;s note because it&apos;s easier for me to look at them using the note panel, but the &apos;script1&apos; attribute can be a better alternative in other cases" ID="ID_1820388139"/>
 </node>
-<node TEXT="some example scripts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1759050976">
+<node TEXT="some example scripts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_1759050976">
 <edge COLOR="#ff0000"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      I will put some example scripts in here
-    </p>
-  </body>
-</html>
-
-</richcontent>
 <node TEXT="just for fun" ID="ID_139385750">
-<node TEXT="reverse text from node" ID="ID_1358363057"><richcontent TYPE="NOTE">
+<node TEXT="reverse text from node&#xa;(script in Note)" ID="ID_1358363057"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -438,6 +419,43 @@
   <body>
     <p>
       node.text = node.text.reverse()
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="reverse text from node&#xa;(script in attributte)" ID="ID_421297504">
+<attribute_layout NAME_WIDTH="47.99999856948857 pt" VALUE_WIDTH="142.49999575316917 pt"/>
+<attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
+</node>
+<node TEXT="reverse text from node&#xa;(show in dialog)" ID="ID_287507709"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def msg = node.text.reverse()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ui.informationMessage(msg)
     </p>
   </body>
 </html>
@@ -455,15 +473,382 @@
     </p>
   </body>
 </html>
+</richcontent>
+</node>
+<node TEXT="reverse text from node&#xa;(show in dialog. longer msg)" ID="ID_1518439473"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def reversed = node.text.reverse()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def msg = &quot;the node's text \n&nbsp;&nbsp;'${node.text}' \n\n when reversed looks so:\n '$reversed' &quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ui.informationMessage(msg)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="upper case text from node&#xa;(show in dialog)" ID="ID_595049113"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def up = node.text.toUpperCase()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def msg = &quot;the node's text: \n&nbsp;&nbsp;'${node.text}' \n\n in upper case looks so:\n '$up' &quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ui.informationMessage(msg)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="upper case text from node&#xa;(show in status bar)" ID="ID_433416538"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def up = node.text.toUpperCase()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def msg = &quot;the node's text:&nbsp;'${node.text}'&nbsp;&nbsp;in upper case looks so: '$up' &quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.statusInfo = msg
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+    <p>
+      Status bar is the bar at the bottom of the Freeplane window
+    </p>
+  </body>
+</html>
 
 </richcontent>
 </node>
-<node TEXT="script in attributte" ID="ID_421297504">
-<attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
+</node>
+<node TEXT="Note &lt;-&gt; script1" ID="ID_603872318"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      did you change your mind?
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="COPY script1 to Note&#xa;(selected node and its descendants)" ID="ID_652267210"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def nodos = node.find{it['script1']?true:false}
+    </p>
+    <p>
+      // println nodos.size()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.each{ n -&gt;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.noteText = n['script1'].plain.toString().trim()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.details = '.groovy'
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.statusInfo = &quot;node's script1 copied to note&quot;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="COPY Note to script1&#xa;(selected node and its descendants)" ID="ID_505642186"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import WSE
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //def nodos = node.find{it.details.toString().toLowerCase().startsWith('.groovy')}&nbsp;&nbsp;// the previous way&nbsp;
+    </p>
+    <p>
+      def nodos = node.find{WSE.isGroovyNode(it) &amp;&amp; it.note} //find all descendants that are groovy nodes and have a note (note is not null)
+    </p>
+    <p>
+      // println nodos.size()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.each{ n -&gt;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['script1'] = n.note.toString().trim()
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.statusInfo = &quot;groovy note copied to node's script1&quot;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="MOVE script1 to Note&#xa;(selected node and its descendants)" ID="ID_1164997859"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def nodos = node.find{it['script1']?true:false}
+    </p>
+    <p>
+      // println nodos.size()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.each{ n -&gt;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.noteText = n['script1'].plain.toString().trim()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.details = '.groovy'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['script1'] = null
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.statusInfo = &quot;node's script1 moved to note&quot;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="MOVE Note to script1&#xa;(selected node and its descendants)" ID="ID_1988029826"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import WSE
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //def nodos = node.find{it.details.toString().toLowerCase().startsWith('.groovy')}&nbsp;&nbsp;// the previous way
+    </p>
+    <p>
+      def nodos = node.find{WSE.isGroovyNode(it) &amp;&amp; it.note} //find all descendants that are groovy nodes and have a note (note is not null)
+    </p>
+    <p>
+      // println nodos.size()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.each{ n -&gt;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['script1'] = n.note.toString().trim()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.note =&nbsp;&nbsp;null
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.statusInfo = &quot;groovy note moved to node's script1&quot;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </node>
-<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_369156413">
+<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_369156413">
 <edge COLOR="#ff0000"/>
 <node ID="ID_1354189218"><richcontent TYPE="NODE">
 
@@ -488,7 +873,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="About the Croovy Console" ID="ID_787303315">
+<node TEXT="About the Croovy Console" FOLDED="true" ID="ID_787303315">
 <node TEXT="http://www.groovy-lang.org/groovyconsole.html" ID="ID_1461896822" LINK="http://www.groovy-lang.org/groovyconsole.html"><richcontent TYPE="DETAILS">
 
 <html>
@@ -501,15 +886,14 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
 </node>
-<node TEXT="&apos;Groovy nodes&apos; and Formating" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_751311327">
+<node TEXT="&apos;Groovy nodes&apos; and Formating" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_751311327">
 <edge COLOR="#ff0000"/>
 <node TEXT="For this map I defined a node style for groovy nodes and a condtional formating rule to identify them:" ID="ID_306937081"/>
-<node TEXT="I defined a new user style" ID="ID_536457057"><richcontent TYPE="DETAILS">
+<node TEXT="I defined a new user style" FOLDED="true" ID="ID_536457057"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -521,11 +905,10 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="GroovyNode" STYLE_REF="GroovyNode" ID="ID_1423752780"/>
 </node>
-<node TEXT="and added a Map conditional style" ID="ID_1346000498"><richcontent TYPE="DETAILS">
+<node TEXT="and added a Map conditional style" FOLDED="true" ID="ID_1346000498"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -540,18 +923,17 @@
     </p>
   </body>
 </html>
-
 </richcontent>
-<node TEXT="Condition (Filter)" ID="ID_1444925104">
-<node TEXT="Script filter" ID="ID_471600222">
+<node TEXT="Condition (Filter)" FOLDED="true" ID="ID_1444925104">
+<node TEXT="Script filter" FOLDED="true" ID="ID_471600222">
 <node TEXT="WSE.isGroovyNode(node)" ID="ID_1838927223"/>
 </node>
 </node>
-<node TEXT="Style" ID="ID_998512892">
+<node TEXT="Style" FOLDED="true" ID="ID_998512892">
 <node TEXT="GroovyNode" ID="ID_156615250"/>
 </node>
 </node>
-<node TEXT="These are the conditions to define/recognize a node as a &quot;groovy node&quot;:" ID="ID_1821907409"><richcontent TYPE="DETAILS">
+<node TEXT="These are the conditions to define/recognize a node as a &quot;groovy node&quot;:" FOLDED="true" ID="ID_1821907409"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -563,13 +945,12 @@
     </p>
   </body>
 </html>
-
 </richcontent>
-<node TEXT="node text ends with &quot;.groovy&quot;" ID="ID_1275123559" MIN_WIDTH="6.0 cm">
+<node TEXT="node text ends with &quot;.groovy&quot;" FOLDED="true" ID="ID_1275123559" MIN_WIDTH="6.0 cm">
 <node TEXT="example.groovy" ID="ID_1778018916"/>
 <node TEXT="test it yourself: add a new node that ends with &quot;.groovy&quot;" ID="ID_1834977468"/>
 </node>
-<node TEXT="node details starts with &quot;.groovy&quot;" ID="ID_1884510639" MIN_WIDTH="6.0 cm">
+<node TEXT="node details starts with &quot;.groovy&quot;" FOLDED="true" ID="ID_1884510639" MIN_WIDTH="6.0 cm">
 <node TEXT="example" ID="ID_920876527"><richcontent TYPE="DETAILS">
 
 <html>
@@ -582,7 +963,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="example" ID="ID_397042400"><richcontent TYPE="DETAILS">
@@ -597,7 +977,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="example" ID="ID_1147366405"><richcontent TYPE="DETAILS">
@@ -615,16 +994,15 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
-<node TEXT="node has a &apos;script1&apos; attribute" ID="ID_1867851751" MIN_WIDTH="6.0 cm">
+<node TEXT="node has a &apos;script1&apos; attribute" FOLDED="true" ID="ID_1867851751" MIN_WIDTH="6.0 cm">
 <node TEXT="example3" ID="ID_1070150946">
 <attribute NAME="script1" VALUE="x"/>
 </node>
 </node>
-<node TEXT="node has a link to a groovy file" ID="ID_937959535" MIN_WIDTH="6.0 cm">
+<node TEXT="node has a link to a groovy file" FOLDED="true" ID="ID_937959535" MIN_WIDTH="6.0 cm">
 <node TEXT="openSampleMap" ID="ID_702890566" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_WikdShell_Extension/WikdShellExtension/scripts/openSampleMap.groovy"/>
 </node>
 </node>
