@@ -6,7 +6,7 @@
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="GroovyNode" LAST="false">
             <script_condition>
-                <script>WSE.isGroovyNode(node)</script>
+                <script>try { WSE.isGroovyNode(node) } catch(e) { false }</script>
             </script_condition>
         </conditional_style>
     </conditional_styles>
@@ -78,7 +78,7 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="HEADINGS"/>
 <hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_352669836">
+<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_352669836">
 <edge COLOR="#ff0000"/>
 <node TEXT="in Freeplane Menu" FOLDED="true" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
 <node TEXT="open With WikdShell" FOLDED="true" ID="ID_1187261389" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
@@ -459,7 +459,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -499,7 +498,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -539,7 +537,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -579,7 +576,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -596,7 +592,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -612,7 +607,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="COPY script1 to Note&#xa;(selected node and its descendants)" ID="ID_652267210"><richcontent TYPE="NOTE">
 
@@ -650,7 +644,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -711,7 +704,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -766,7 +758,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -830,7 +821,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -848,7 +838,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_369156413">
+<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_369156413">
 <edge COLOR="#ff0000"/>
 <node ID="ID_1354189218"><richcontent TYPE="NODE">
 
@@ -926,7 +916,7 @@
 </richcontent>
 <node TEXT="Condition (Filter)" FOLDED="true" ID="ID_1444925104">
 <node TEXT="Script filter" FOLDED="true" ID="ID_471600222">
-<node TEXT="WSE.isGroovyNode(node)" ID="ID_1838927223"/>
+<node TEXT="try { WSE.isGroovyNode(node) } catch(e) { false }" ID="ID_1292434900"/>
 </node>
 </node>
 <node TEXT="Style" FOLDED="true" ID="ID_998512892">

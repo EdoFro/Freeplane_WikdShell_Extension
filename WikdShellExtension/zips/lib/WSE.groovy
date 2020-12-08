@@ -2,30 +2,30 @@
 // In future versions I will do it and put the file in the lib folder of the AddOn.
 // now it gets installed as a groovy file in the userDirectory/lib folder
 
-
+import org.freeplane.plugin.script.FreeplaneScriptBaseClass as FSBC
 import org.freeplane.plugin.script.proxy.ScriptUtils
+import WikdExtension
+import javax.swing.*
 
 class WSE{
+
+// region: properties
+
     static final String attributeForExtensions = 'file_ext'
-    // static final String addressNpp = 'C:\\Program Files\\Notepad++\\notepad++.exe'; // there is Notepad++ executable instaled
-    // static final String[] acceptedFileExtensions = ['groovy', 'sql', 'txt', 'ini', 'cfg', 'md', 'odc', 'json', 'properties', 'log', 'trc', 'compiledscripts', 'xml', 'bas', 'cls','frm'] // list of file extension I decided that can be opened with Notepad ++ (it is only to avoid opening pdf or excel files in N++ accidentally)
-    // static final String executionMode = '// @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/NoteToFile"})\n\n'
-    // static final String fileName = 'myTempFile'
+    static final Boolean fullScreen = true
+    
+// end
 
-    // def static getFolderAndName(ext){
-        // def mapFolders = [:]
-        // mapFolders['xDefault'] = 'C:/Temp/'
-        // mapFolders['groovy'] = ScriptUtils.c().userDirectory.path + '\\scripts\\'
-
-        // return (mapFolders[ext]?:mapFolders.xDefault) + fileName + '.'
-    // }
+// region: get/set/is extension from selected node
 
     def static extensionFromNode(n){
         extensionFromAttribute(n)?:extensionFromDetails(n)?:extensionFromText(n)?:null
     }
+    
     def static extensionFromAttribute(n){
         n[attributeForExtensions]?:null
     }
+    
     def static extensionFromDetails(n){
         n.details?.size()>1?n.details?[0]=='.'?n.details.drop(1).takeBefore(' ').takeBefore('\n')?:n.details.drop(1).takeBefore('\n')?:n.details.drop(1).takeBefore(' ')?:n.details.drop(1):null:null
     }
@@ -59,8 +59,49 @@ class WSE{
         return ext?ext==extension:false
     }
 
+// end
+
+// region: is groovy
+
     def static isGroovyNode(n){
         return (isExtensionNode(n, 'groovy') || n['script1']?true:false)
     }
+    
+// end
+
+// region: openWikdShell
+
+def static openWikdShell(n, bind) {
+    this.openWikdShell(n, bind, null, null, fullScreen)
+}
+
+def static openWikdShell(n, bind, boolean fs) {
+    this.openWikdShell(n, bind, null, null, fs)
+}
+
+def static openWikdShell(n, bind, inPut, source, boolean fs = fullScreen) {
+    WikdExtension console = new WikdExtension(bind)
+    console.setVariable('map', n.map)
+    console.setVariable('root', n.map.root)
+    console.setVariable('source', source)
+    console.setVariable('initialNodeID', n.id)
+    console.setVariable('targetNodeID', n.id)
+    console.opciones[0] = "Node '${n.text}'".toString()
+    console.run(n.map.name)
+    switch(inPut?.class){
+        case File:
+            console.loadScriptFile(inPut)
+            break;
+        case String:
+            console.inputArea.setText(inPut + "\n\n\n")
+           break;
+    }
+    console.addToNoteButton()
+    console.addToScript1Button()
+    if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
+}
+
+
+// end
 
 }
