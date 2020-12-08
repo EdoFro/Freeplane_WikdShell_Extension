@@ -15,8 +15,8 @@ This way you can save all little tests, one time scripts or map specific scripts
 
 ## Install
 
-1. Get the last version from **Freeplane** from [here](https://sourceforge.net/projects/freeplane/) and install it
-1. Download the last version of **WikdShell Add-On** from [here](https://sourceforge.net/projects/freeplane/files/addons/wikdShell/wikdShell-0.3.2.addon.mm/download)
+1. Get the latest version from **Freeplane** from [here](https://sourceforge.net/projects/freeplane/) and install it
+1. Download the latest version of **WikdShell Add-On** from [here](https://sourceforge.net/projects/freeplane/files/addons/wikdShell/wikdShell-0.3.2.addon.mm/download)
 1. **Install it** (just open the addon map in Freeplane and follow the instructions)
 1. Get the [latest version](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/latest) of the **WikdShell_Extension AddOn** ([click here](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/download/v0.0.1/WikdShellExtension-v0.0.1.addon.mm) to download)
 1. **Install it** (just open the addon map in Freeplane and follow the instructions)
