@@ -1,12 +1,12 @@
 # Freeplane WikdShell_Extension Add On
 
-**WikdShell_Extension** *add_on* for **[Freeplane](https://www.freeplane.org/)** adds some functionalities to the original **[WikdShell](https://www.freeplane.org/wiki/index.php/Add-ons_(install)#wikdShell)** *add_on*.
+**WikdShell_Extension** *add-on* for **[Freeplane](https://www.freeplane.org/)** adds some functionalities to the original **[WikdShell](https://www.freeplane.org/wiki/index.php/Add-ons_(install)#wikdShell)** *add-on*.
 
 The original **WikdShell** is a great add_on that gives the user the posibility to open a **Groovy console** directly from **Freeplane** to create, edit and try **scripts** that interact directly with the **mindmaps**.
 
 This way you can **add functionalities** to Freeplane, **automatize** repetitive **tasks** and **improve** your **productivity** when using mindmaps.
 
-The present AddOn (**WikdShell_Extension**) gives you the additional possibility to **"save" the scripts** you create **as nodes in your maps**.
+The present Add-On (**WikdShell_Extension**) gives you the additional possibility to **"save" the scripts** you create **as nodes in your maps**.
 
 This way you can save all little tests, one time scripts or map specific scripts in your own organized way, **without overflowing** your scripts folders or **Freeplane's scripts submenu**.
 
@@ -16,7 +16,7 @@ This way you can save all little tests, one time scripts or map specific scripts
 ## Install
 
 1. Get the last version from **Freeplane** from [here](https://sourceforge.net/projects/freeplane/) and install it
-1. Download the last version of **WikdShell AddOn** from [here](https://sourceforge.net/projects/freeplane/files/addons/wikdShell/wikdShell-0.3.2.addon.mm/download)
+1. Download the last version of **WikdShell Add-On** from [here](https://sourceforge.net/projects/freeplane/files/addons/wikdShell/wikdShell-0.3.2.addon.mm/download)
 1. **Install it** (just open the addon map in Freeplane and follow the instructions)
 1. Get the [latest version](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/latest) of the **WikdShell_Extension AddOn** ([click here](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/download/v0.0.1/WikdShellExtension-v0.0.1.addon.mm) to download)
 1. **Install it** (just open the addon map in Freeplane and follow the instructions)
@@ -26,13 +26,28 @@ This way you can save all little tests, one time scripts or map specific scripts
 
 ---
 
+## Images
+
+### scripts are stored in the map's nodes
+
+![scriptInNote](resources/Image002.png)
+
+### Changes in WikdShell Groovy console
+
+![scriptInNote](resources/Image001.png)
+
+---
+
 ## Using the Add On
 
 ---
 
 ### Open Sample Map
 
-This command opens a **mind map with instructions** and examples to learn how to use this AddOn
+This command opens a **mind map with instructions** and examples to learn how to use this Add-On
+
+> [!TIP]
+> Look at this map to learn how to use this Add-On
 
 ---
 
@@ -66,7 +81,7 @@ This command opens the wikdShell Groovy console adding this functionalities to i
   - or the node's 'script1' attribute
 
 > [!NOTE]
-> (\*\*) in this case, the node gets "*marked*" as a "*groovy node*" **automatically** by the AddOn
+> (\*\*) in this case, the node gets "*marked*" as a "*groovy node*" **automatically** by the Add-On
 
 ---
 
