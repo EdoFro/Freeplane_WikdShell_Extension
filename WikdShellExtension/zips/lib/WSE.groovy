@@ -98,6 +98,8 @@ def static openWikdShell(n, bind, inPut, source, boolean fs = fullScreen) {
     }
     console.addToNoteButton()
     console.addToScript1Button()
+    console.addLoadButton()
+    console.setDirty(false)
     if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
 }
 
