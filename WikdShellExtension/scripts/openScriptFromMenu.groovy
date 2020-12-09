@@ -7,7 +7,9 @@ import org.freeplane.features.mode.Controller;
 
 import org.freeplane.core.util.MenuUtils.MenuEntry            //(1)
 import org.freeplane.features.link.mindmapmode.SelectMenuItemDialog            //(1)
-import WSE
+//import WSE
+import edofro.wikdshellextension.WSE
+
 
 MenuEntry menuEntry = createSelectMenuItemDialog(node).getMenuItem()             //(1)
 Entry menuItem = genericMenuStructure().findEntry(menuEntry.key)

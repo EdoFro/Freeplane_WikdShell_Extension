@@ -1,3 +1,4 @@
+package edofro.wikdshellextension
 
 import java.awt.event.KeyEvent
 import java.awt.event.ActionEvent;
@@ -7,7 +8,7 @@ import groovy.transform.InheritConstructors
 import javax.swing.*
 import org.hardknots.wikd.wikdshell.WikdShell
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass as FSBC
-import WSE
+// import WSE
 // import org.freeplane.plugin.script.proxy.ScriptUtils
 
 @InheritConstructors

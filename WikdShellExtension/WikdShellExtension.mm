@@ -152,7 +152,7 @@
 <node TEXT="initial release" ID="ID_796313183"/>
 </node>
 <node TEXT="v0.0.2" ID="ID_1708602762">
-<node TEXT="1. New button in console to load the script related to the selected node&#xa;2. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog&#xa;3. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))&#xa;4. Shows an *  in title if the script has been modified and not saved (or exported to node) (as &quot;dirty&quot; indicator)&#xa;5. Reorganizing the code in separate files&#xa;6. Added translations in spanish and german&#xa;7. Added icon for AddOn" ID="ID_681908861"/>
+<node TEXT="1. New button in console to load the script related to the selected node&#xa;2. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog&#xa;3. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))&#xa;4. Shows an *  in title if the script has been modified and not saved (or exported to node) (as &quot;dirty&quot; indicator)&#xa;5. Reorganizing the code in separate files&#xa;6. Added translations in spanish and german&#xa;7. Added icon for AddOn&#xa;8. libs builded into JAR file" ID="ID_681908861"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_646377602">
@@ -293,11 +293,10 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithWikdShell.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openSampleMap.groovy"/>
-<attribute NAME="delete" VALUE="${installationbase}/doc/WikdShell Extension Sample Map.mm"/>
-<attribute NAME="delete" VALUE="${installationbase}/lib/WSE.groovy"/>
-<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WSE.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openScriptFromMenu.groovy"/>
-<attribute NAME="delete" VALUE="${installationbase}/lib/WikdExtension.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WikdShellExtension.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/wikdshell.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Sample Map.mm"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension-icon.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension-screenshot-1.png"/>
@@ -455,7 +454,7 @@
 <attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
-<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
@@ -500,6 +499,8 @@
 </html>
 
 </richcontent>
+<node TEXT="WikdShellExtension.jar" ID="ID_803063352"/>
+<node TEXT="wikdshell.jar" ID="ID_1369271769"/>
 </node>
 <node TEXT="zips" POSITION="right" ID="ID_580554032">
 <edge COLOR="#007c7c"/>
@@ -541,13 +542,7 @@
 </html>
 
 </richcontent>
-<node TEXT="doc" ID="ID_180076950">
-<node TEXT="WikdShell Extension Sample Map.mm" ID="ID_1246704905"/>
-</node>
-<node TEXT="lib" ID="ID_48988928">
-<node TEXT="WSE.groovy" ID="ID_1387329648"/>
-<node TEXT="WikdExtension.groovy" ID="ID_1908873286"/>
-</node>
+<node TEXT="doc" ID="ID_180076950"/>
 </node>
 <node TEXT="images" POSITION="right" ID="ID_1666837925">
 <edge COLOR="#7c7c00"/>

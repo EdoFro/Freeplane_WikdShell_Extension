@@ -1,10 +1,12 @@
+package edofro.wikdshellextension
+
 // I don't know how to compile this as a .jar file (yet).
 // In future versions I will do it and put the file in the lib folder of the AddOn.
 // now it gets installed as a groovy file in the userDirectory/lib folder
 
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass as FSBC
 import org.freeplane.plugin.script.proxy.ScriptUtils
-import WikdExtension
+// import WikdExtension
 import javax.swing.*
 
 class WSE{

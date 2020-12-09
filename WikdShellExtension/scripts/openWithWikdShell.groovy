@@ -1,5 +1,6 @@
 
-import WSE
+//import WSE
+import edofro.wikdshellextension.WSE
 
 // order of priority
     // groovy file   >  script1  >  ".groovy" note  >  empty
