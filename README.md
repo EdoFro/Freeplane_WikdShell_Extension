@@ -11,14 +11,12 @@ The present Add-On (**WikdShell_Extension**) gives you the additional possibilit
 This way you can save all little tests, one time scripts or map specific scripts in your own organized way, **without overflowing** your scripts folders or **Freeplane's scripts submenu**.
 
 > [!IMPORTANT]
-> for this script to work, you need the **wikdShell Addon v0.3.2** and a **Freeplane** version equal or newer than **v1.8.10-pre06** or the stable version **v1.8.10**
+> for this script to work, you need a **Freeplane** version equal or newer than **v1.8.10-pre06** or the stable version **v1.8.10**
 
 ## Install
 
 1. Get the latest version from **Freeplane** from [here](https://sourceforge.net/projects/freeplane/) and install it
-1. Download the latest version of **WikdShell Add-On** from [here](https://sourceforge.net/projects/freeplane/files/addons/wikdShell/wikdShell-0.3.2.addon.mm/download)
-1. **Install it** (just open the addon map in Freeplane and follow the instructions)
-1. Get the [latest version](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/latest) of the **WikdShell_Extension AddOn** ([click here](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/download/v0.0.1/WikdShellExtension-v0.0.1.addon.mm) to download)
+1. Download the latest version of the **WikdShell_Extension AddOn** from [here](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/)
 1. **Install it** (just open the addon map in Freeplane and follow the instructions)
 1. **Restart Freeplane**
 
@@ -30,11 +28,19 @@ This way you can save all little tests, one time scripts or map specific scripts
 
 ### scripts are stored in the map's nodes
 
-![scriptInNote](resources/Image002.png)
+![Note with script](resources/Image002.png)
 
 ### Changes in WikdShell Groovy console
 
-![scriptInNote](resources/Image001.png)
+![buttons to export script to nodes](resources/Image001.png)
+
+### NEW in v0.0.2: Button to load from selected node
+
+![Load button](resources/Image003.png)
+
+### NEW in v0.0.2: Choose scripts to edit from menu item
+
+![Edit script from menu](resources/Image004.png)
 
 ---
 
@@ -74,7 +80,7 @@ This command opens the wikdShell Groovy console adding this functionalities to i
 
 ---
 
-#### 2. it saves script to a node
+#### 2. option to save script to a node
 
 - it adds two buttons to the groovy console to directly export the edited script to
   - the node's note (\*\*)
@@ -85,6 +91,17 @@ This command opens the wikdShell Groovy console adding this functionalities to i
 
 ---
 
+#### 3. button to load a script from the selected node
+
+- it adds a button to load the script from the selected node if it has
+  - a **link** to a **groovy file**
+  - a '**script1**' attribute
+  - or a groovy script in its **note** (\*)
+
+### Edit script from menu
+
+This command opens a dialog showing all menu items. The user can use it to choose a menu item related to a script and its file will open in the groovy console.
+
 ## Examples
 
 ### - Saving script in node's note
@@ -92,6 +109,25 @@ This command opens the wikdShell Groovy console adding this functionalities to i
 ![scriptInNote](resources/scriptInNote.gif)
 
 ---
+
+## history
+
+### v0.0.2
+
+1. New button in console to load the script related to the selected node
+1. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog
+1. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))
+1. Shows an *  in title if the script has been modified and not saved (or exported to node) (as "dirty" indicator)
+1. Reorganizing the code in separate files
+1. Added translations in spanish and german
+1. Added images for AddOn (based on original images)
+1. Libs builded into JAR file
+1. Added original wikdShell.jar file (now it is not necessary to have WikdShell installed)
+
+
+### v0.0.1
+
+1. Initiaal release
 
 ## more information
 

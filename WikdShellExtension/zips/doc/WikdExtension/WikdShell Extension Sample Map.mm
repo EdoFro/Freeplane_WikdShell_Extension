@@ -6,7 +6,7 @@
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="GroovyNode" LAST="false">
             <script_condition>
-                <script>WSE.isGroovyNode(node)</script>
+                <script>try { edofro.wikdshellextension.WSE.isGroovyNode(node) } catch(e) { false }</script>
             </script_condition>
         </conditional_style>
     </conditional_styles>
@@ -78,9 +78,9 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="HEADINGS"/>
 <hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_352669836">
+<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_352669836">
 <edge COLOR="#ff0000"/>
-<node TEXT="in Freeplane Menu" FOLDED="true" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
+<node TEXT="in Freeplane Menu / Edo Tools" FOLDED="true" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
 <node TEXT="open With WikdShell" FOLDED="true" ID="ID_1187261389" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
@@ -146,6 +146,21 @@
 </html>
 </richcontent>
 <node TEXT="opens this map" ID="ID_1745439869"/>
+</node>
+<node TEXT="Edit script from menu" FOLDED="true" ID="ID_509823841" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      menu command
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="This command opens a dialog showing all menu items.&#xa;The user can use it to choose a menu item related to a script and its file will open in the groovy console." ID="ID_782072806"/>
 </node>
 </node>
 <node TEXT="in WikdShell Groovy Console" FOLDED="true" ID="ID_279370205" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
@@ -265,6 +280,48 @@
 <node ID="ID_1554679791" TREE_ID="ID_1695698895"/>
 </node>
 </node>
+</node>
+</node>
+<node TEXT="load script from node" FOLDED="true" ID="ID_1287013104" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      menu button
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Loads the script from the selected node" ID="ID_1031602412"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      if node is a Groovy Node:
+    </p>
+    <p>
+      it has
+    </p>
+    <p>
+      - a **link** to a **groovy file**
+    </p>
+    <p>
+      - a '**script1**' attribute
+    </p>
+    <p>
+      - or a groovy script in its **note** (\*)
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
 </node>
 </node>
@@ -410,6 +467,7 @@
 <node TEXT="some example scripts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_1759050976">
 <edge COLOR="#ff0000"/>
 <node TEXT="just for fun" ID="ID_139385750">
+<node TEXT="modifing node&apos;s text" FOLDED="true" ID="ID_1699147842">
 <node TEXT="reverse text from node&#xa;(script in Note)" ID="ID_1358363057"><richcontent TYPE="NOTE">
 
 <html>
@@ -441,6 +499,8 @@
 <attribute_layout NAME_WIDTH="47.99999856948857 pt" VALUE_WIDTH="142.49999575316917 pt"/>
 <attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
 </node>
+</node>
+<node TEXT="shows result in dialog" ID="ID_1009356227">
 <node TEXT="reverse text from node&#xa;(show in dialog)" ID="ID_287507709"><richcontent TYPE="NOTE">
 
 <html>
@@ -459,7 +519,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -499,7 +558,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -539,7 +597,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -555,6 +612,8 @@
 </html>
 </richcontent>
 </node>
+</node>
+<node TEXT="shows result in status bar" FOLDED="true" ID="ID_1379510694">
 <node TEXT="upper case text from node&#xa;(show in status bar)" ID="ID_433416538"><richcontent TYPE="NOTE">
 
 <html>
@@ -579,7 +638,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -596,11 +654,11 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
-<node TEXT="Note &lt;-&gt; script1" ID="ID_603872318"><richcontent TYPE="DETAILS">
+</node>
+<node TEXT="Note &lt;-&gt; script1" FOLDED="true" ID="ID_603872318"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -612,7 +670,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="COPY script1 to Note&#xa;(selected node and its descendants)" ID="ID_652267210"><richcontent TYPE="NOTE">
 
@@ -650,7 +707,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -711,7 +767,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -766,7 +821,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -830,7 +884,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="DETAILS">
 
@@ -848,7 +901,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_369156413">
+<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_369156413">
 <edge COLOR="#ff0000"/>
 <node ID="ID_1354189218"><richcontent TYPE="NODE">
 
@@ -925,8 +978,8 @@
 </html>
 </richcontent>
 <node TEXT="Condition (Filter)" FOLDED="true" ID="ID_1444925104">
-<node TEXT="Script filter" FOLDED="true" ID="ID_471600222">
-<node TEXT="WSE.isGroovyNode(node)" ID="ID_1838927223"/>
+<node TEXT="Script filter" ID="ID_471600222">
+<node TEXT="try { edofro.wikdshellextension.WSE.isGroovyNode(node) } catch(e) { false }" ID="ID_1461575287"/>
 </node>
 </node>
 <node TEXT="Style" FOLDED="true" ID="ID_998512892">

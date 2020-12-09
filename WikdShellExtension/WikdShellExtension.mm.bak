@@ -1,9 +1,9 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="WikdShell Extension" ID="ID_275097868" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
+<node TEXT="WikdShell Extension" FOLDED="false" ID="ID_275097868" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -66,7 +66,7 @@
 <hook NAME="AutomaticEdgeColor" COUNTER="12" RULE="ON_BRANCH_CREATION"/>
 <attribute_layout NAME_WIDTH="112.49999664723883 pt" VALUE_WIDTH="112.49999664723883 pt"/>
 <attribute NAME="name" VALUE="wikdShellExtension"/>
-<attribute NAME="version" VALUE="v0.0.1"/>
+<attribute NAME="version" VALUE="v0.0.2"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.8.10"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -151,8 +151,11 @@
 <node TEXT="v0.0.1" ID="ID_816109358">
 <node TEXT="initial release" ID="ID_796313183"/>
 </node>
+<node TEXT="v0.0.2" ID="ID_1708602762">
+<node TEXT="1. New button in console to load the script related to the selected node&#xa;2. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog&#xa;3. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))&#xa;4. Shows an *  in title if the script has been modified and not saved (or exported to node) (as &quot;dirty&quot; indicator)&#xa;5. Reorganizing the code in separate files&#xa;6. Added translations in spanish and german&#xa;7. Added icon for AddOn&#xa;8. libs builded into JAR file" ID="ID_681908861"/>
 </node>
-<node TEXT="license" POSITION="left" ID="ID_646377602">
+</node>
+<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_646377602">
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="NOTE">
 
@@ -253,6 +256,21 @@
 <attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
 <attribute NAME="addons.${name}.openWithWikdShell" VALUE="Open with WikdShell console"/>
 <attribute NAME="addons.${name}.openSampleMap" VALUE="Open sample map"/>
+<attribute NAME="addons.${name}.openScriptFromMenu" VALUE="Edit script from menu"/>
+</node>
+<node TEXT="es" ID="ID_1732933203">
+<attribute_layout NAME_WIDTH="167.24999501556172 pt" VALUE_WIDTH="133.49999602139007 pt"/>
+<attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
+<attribute NAME="addons.${name}.openWithWikdShell" VALUE="Abrir con consola WikdShell"/>
+<attribute NAME="addons.${name}.openSampleMap" VALUE="Abrir mapa ejemplo"/>
+<attribute NAME="addons.${name}.openScriptFromMenu" VALUE="Editar script desde menu"/>
+</node>
+<node TEXT="de" ID="ID_1677975658">
+<attribute_layout NAME_WIDTH="167.24999501556172 pt" VALUE_WIDTH="133.49999602139007 pt"/>
+<attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
+<attribute NAME="addons.${name}.openWithWikdShell" VALUE="Öffnen mit WikdShell console"/>
+<attribute NAME="addons.${name}.openSampleMap" VALUE="Beispiel Map öffnen"/>
+<attribute NAME="addons.${name}.openScriptFromMenu" VALUE="Script vom Menu bearbeiten"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="left" ID="ID_1341329996">
@@ -271,12 +289,17 @@
 </html>
 
 </richcontent>
+<attribute_layout NAME_WIDTH="45.74999863654379 pt" VALUE_WIDTH="333.7499900534752 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithWikdShell.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openSampleMap.groovy"/>
-<attribute NAME="delete" VALUE="${installationbase}/doc/WikdShell Extension Sample Map.mm"/>
-<attribute NAME="delete" VALUE="${installationbase}/lib/WSE.groovy"/>
-<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WSE.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openScriptFromMenu.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WikdShellExtension.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/wikdshell.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Sample Map.mm"/>
+<attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension.png"/>
+<attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension-icon.png"/>
+<attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension-screenshot-1.png"/>
 </node>
 <node TEXT="scripts" POSITION="right" ID="ID_1411461009">
 <edge COLOR="#007c00"/>
@@ -423,6 +446,18 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
+<node TEXT="openScriptFromMenu.groovy" ID="ID_416946908">
+<attribute_layout NAME_WIDTH="196.49999414384382 pt" VALUE_WIDTH="181.49999459087866 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.openScriptFromMenu"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
 </node>
 <node TEXT="lib" POSITION="right" ID="ID_1853082953">
 <edge COLOR="#7c007c"/>
@@ -464,6 +499,8 @@
 </html>
 
 </richcontent>
+<node TEXT="WikdShellExtension.jar" ID="ID_803063352"/>
+<node TEXT="wikdshell.jar" ID="ID_1369271769"/>
 </node>
 <node TEXT="zips" POSITION="right" ID="ID_580554032">
 <edge COLOR="#007c7c"/>
@@ -506,7 +543,6 @@
 
 </richcontent>
 <node TEXT="doc" ID="ID_180076950"/>
-<node TEXT="lib" ID="ID_48988928"/>
 </node>
 <node TEXT="images" POSITION="right" ID="ID_1666837925">
 <edge COLOR="#7c7c00"/>
@@ -544,6 +580,9 @@
 </html>
 
 </richcontent>
+<node TEXT="wikdShellExtension.png" ID="ID_512746522"/>
+<node TEXT="wikdShellExtension-icon.png" ID="ID_1201145963"/>
+<node TEXT="wikdShellExtension-screenshot-1.png" ID="ID_168345605"/>
 </node>
 </node>
 </map>
