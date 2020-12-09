@@ -62,9 +62,11 @@ class WikdExtension extends WikdShell {
                 if ( resp>=0 ) {
                     nodo.note = this.inputArea.getText().toString().trim()
                     WSE.setExtension(nodo,'groovy')
-                    JOptionPane.showMessageDialog(null, "script text sended to:\n   note \n\nin node:\n   '$nodo.text'\n\n")
                     opciones[0] = "Node '${nodo.text}'"
                     vars['targetNodeID'] = nodo.id
+                    this.setDirty(false)
+                    this.updateTitle()
+                    JOptionPane.showMessageDialog(null, "script text sended to:\n   note \n\nin node:\n   '$nodo.text'\n\n")
                 }
             }
         })
@@ -102,9 +104,11 @@ class WikdExtension extends WikdShell {
                 if ( resp>=0 ) {
                     nodo['script1'] = this.inputArea.getText().toString().trim()
                     // WSE.setExtension(nodo,'groovy')
-                    JOptionPane.showMessageDialog(null, "script text sended to:\n   'script1' attribute \n\nin node:\n   '$nodo.text'\n\n")
                     opciones[0] = "Node '${nodo.text}'"
                     vars['targetNodeID'] = nodo.id
+                    this.setDirty(false)
+                    this.updateTitle()
+                    JOptionPane.showMessageDialog(null, "script text sended to:\n   'script1' attribute \n\nin node:\n   '$nodo.text'\n\n")
                 }
             }
         })
@@ -155,6 +159,7 @@ class WikdExtension extends WikdShell {
                             break;
                     }
                     this.setDirty(false)                  
+                    this.updateTitle()
                 }
             }
         })
