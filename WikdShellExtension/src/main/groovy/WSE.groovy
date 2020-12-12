@@ -1,9 +1,5 @@
 package edofro.wikdshellextension
 
-// I don't know how to compile this as a .jar file (yet).
-// In future versions I will do it and put the file in the lib folder of the AddOn.
-// now it gets installed as a groovy file in the userDirectory/lib folder
-
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass as FSBC
 import org.freeplane.plugin.script.proxy.ScriptUtils
 // import WikdExtension
@@ -53,7 +49,7 @@ class WSE{
     }
 
     def static extensionFromNodeFile(n){
-        (n.link && n.link.uri && n.link.uri.scheme == 'file')?WSE.extensionFromFilePath(n.link.uri.path):null
+        (n.link && n.link.uri && n.link.uri.scheme == 'file')?extensionFromFilePath(n.link.uri.path):null
     }
 
     def static isExtensionNode(n, extension){
@@ -73,38 +69,37 @@ class WSE{
 
 // region: openWikdShell
 
-def static openWikdShell(n, bind) {
-    this.openWikdShell(n, bind, null, null, fullScreen)
-}
-
-def static openWikdShell(n, bind, boolean fs) {
-    this.openWikdShell(n, bind, null, null, fs)
-}
-
-def static openWikdShell(n, bind, inPut, source, boolean fs = fullScreen) {
-    WikdExtension console = new WikdExtension(bind)
-    console.setVariable('map', n.map)
-    console.setVariable('root', n.map.root)
-    console.setVariable('source', source)
-    console.setVariable('initialNodeID', n.id)
-    console.setVariable('targetNodeID', n.id)
-    console.opciones[0] = "Node '${n.text}'".toString()
-    console.run(n.map.name)
-    switch(inPut?.class){
-        case File:
-            console.loadScriptFile(inPut)
-            break;
-        case String:
-            console.inputArea.setText(inPut + "\n\n\n")
-           break;
+    def static openWikdShell(n, bind) {
+        this.openWikdShell(n, bind, null, null, fullScreen)
     }
-    console.addToNoteButton()
-    console.addToScript1Button()
-    console.addLoadButton()
-    console.setDirty(false)
-    if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
-}
-
+    
+    def static openWikdShell(n, bind, boolean fs) {
+        this.openWikdShell(n, bind, null, null, fs)
+    }
+    
+    def static openWikdShell(n, bind, inPut, source, boolean fs = fullScreen) {
+        WikdExtension console = new WikdExtension(bind)
+        console.setVariable('map', n.map)
+        console.setVariable('root', n.map.root)
+        console.setVariable('source', source)
+        console.setVariable('initialNodeID', n.id)
+        console.setVariable('targetNodeID', n.id)
+        console.opciones[0] = "Node '${n.text}'".toString()
+        console.run(n.map.name)
+        switch(inPut?.class){
+            case File:
+                console.loadScriptFile(inPut)
+                break;
+            case String:
+                console.inputArea.setText(inPut + "\n\n\n")
+               break;
+        }
+        console.addToNoteButton()
+        console.addToScript1Button()
+        console.addLoadButton()
+        console.setDirty(false)
+        if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
+    }
 
 // end
 
