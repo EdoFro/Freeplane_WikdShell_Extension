@@ -3,7 +3,7 @@
 <node TEXT="myTempScripts" FOLDED="false" ID="ID_1346135086" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -16,7 +16,9 @@
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes">
 <font SIZE="9"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT">
+<font NAME="Consolas"/>
+</stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.floating">
 <edge STYLE="hide_edge"/>
 <cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
@@ -251,16 +253,26 @@
 <node TEXT="en" ID="ID_1139526756">
 <attribute_layout NAME_WIDTH="156.7499953284861 pt" VALUE_WIDTH="170.999994903803 pt"/>
 <attribute NAME="addons.${name}" VALUE="myTempScripts"/>
-<attribute NAME="addons.${name}.myTempScript01" VALUE="script 01"/>
-<attribute NAME="addons.${name}.myTempScript02" VALUE="script 02"/>
-<attribute NAME="addons.${name}.myTempScript03" VALUE="script 03"/>
-<attribute NAME="addons.${name}.myTempScript04" VALUE="script 04"/>
-<attribute NAME="addons.${name}.myTempScript05" VALUE="script 05"/>
-<attribute NAME="addons.${name}.myTempScript06" VALUE="script 06"/>
-<attribute NAME="addons.${name}.myTempScript07" VALUE="script 07"/>
-<attribute NAME="addons.${name}.myTempScript08" VALUE="script 08"/>
-<attribute NAME="addons.${name}.myTempScript09" VALUE="script 09"/>
-<attribute NAME="addons.${name}.myTempScript10" VALUE="script 10"/>
+<attribute NAME="addons.${name}.myTempScript01" VALUE="1. script 01" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;1. script 01|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript02" VALUE="2. script 02" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;2. script 02|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript03" VALUE="3. script 03" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;3. script 03|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript04" VALUE="4. script 04" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;4. script 04|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript05" VALUE="5. script 05" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;5. script 05|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript06" VALUE="6. script 06" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;6. script 06|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript07" VALUE="7. script 07" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;7. script 07|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript08" VALUE="8. script 08" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;8. script 08|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript09" VALUE="9. script 09" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;9. script 09|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript10" VALUE="10. script 10" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;10. script 10|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript11" VALUE="11. script 11"/>
+<attribute NAME="addons.${name}.myTempScript12" VALUE="12. script 12"/>
+<attribute NAME="addons.${name}.myTempScript13" VALUE="13. script 13"/>
+<attribute NAME="addons.${name}.myTempScript14" VALUE="14. script 14"/>
+<attribute NAME="addons.${name}.myTempScript15" VALUE="15. script 15"/>
+<attribute NAME="addons.${name}.myTempScript16" VALUE="16. script 16"/>
+<attribute NAME="addons.${name}.myTempScript17" VALUE="17. script 17"/>
+<attribute NAME="addons.${name}.myTempScript18" VALUE="18. script 18"/>
+<attribute NAME="addons.${name}.myTempScript19" VALUE="19. script 19"/>
+<attribute NAME="addons.${name}.myTempScript20" VALUE="20. script 20"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="left" ID="ID_482462672">
@@ -290,10 +302,87 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript08.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript09.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript10.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript11.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript12.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript13.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript14.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript15.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript16.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript17.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript18.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript19.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript20.groovy"/>
 </node>
 <node TEXT="my scripts" POSITION="right" ID="ID_1688408217">
 <edge COLOR="#007c00"/>
 <node TEXT="change Attributes in selected script nodes" ID="ID_936568067"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def nodos = c. selecteds
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.findAll{it['menuTitleKey']}.each{ n -&gt;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.attributes.optimizeWidths()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['menuLocation']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= '/menu_bar/edoTools/addons.${name}'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['executionMode']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'on_single_node'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;//n['keyboardShortcut']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'control shift '
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_asking']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_file_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_write_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_exec_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'false'
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_network_restriction']&nbsp;&nbsp;&nbsp;= 'false'
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="change names in translation node" ID="ID_163185404"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -315,40 +404,25 @@
   </head>
   <body>
     <p>
-      def nodos = c. selecteds
+      def attMap =node.attributes.map
     </p>
     <p>
       
     </p>
     <p>
-      nodos.findAll{it['menuTitleKey']}.each{ n -&gt;
+      attMap.each{
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['menuLocation']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= '/menu_bar/edoTools/addons.${name}'
+      &nbsp;&nbsp;&nbsp;&nbsp;if(it.key.startsWith('addons.${name}.myTempScript')) {
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['executionMode']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'on_single_node'
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def i = it.key[-2..-1]
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['keyboardShortcut']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'control shift '
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node[it.key] = &quot;${i.toInteger()}. script $i&quot;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_asking']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_file_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_write_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_exec_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'false'
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_network_restriction']&nbsp;&nbsp;&nbsp;= 'false'&nbsp;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;}
     </p>
     <p>
       }
@@ -581,7 +655,7 @@
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript09"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
-<attribute NAME="keyboardShortcut" VALUE="control shift 9"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
@@ -593,7 +667,127 @@
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript10"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
-<attribute NAME="keyboardShortcut" VALUE="control shift 0"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript11.groovy" ID="ID_1390468769">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript11"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript12.groovy" ID="ID_1036601289">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript12"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript13.groovy" ID="ID_939104196">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript13"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript14.groovy" ID="ID_1304726298">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript14"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript15.groovy" ID="ID_1741194359">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript15"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript16.groovy" ID="ID_1330088864">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript16"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript17.groovy" ID="ID_1966347318">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript17"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript18.groovy" ID="ID_1662907737">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript18"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript19.groovy" ID="ID_550955978">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript19"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="myTempScript20.groovy" ID="ID_1715728996">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript20"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>

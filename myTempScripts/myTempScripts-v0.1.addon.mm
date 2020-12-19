@@ -1,9 +1,9 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="myTempScripts" FOLDED="false" ID="ID_1346135086" CREATED="1607796467336" MODIFIED="1607796467336" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
+<node TEXT="myTempScripts" FOLDED="false" ID="ID_1346135086" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -16,7 +16,9 @@
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes">
 <font SIZE="9"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT">
+<font NAME="Consolas"/>
+</stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.floating">
 <edge STYLE="hide_edge"/>
 <cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
@@ -107,7 +109,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="description" FOLDED="true" POSITION="left" ID="ID_1749785700" CREATED="1607796467339" MODIFIED="1607796467339">
+<node TEXT="description" FOLDED="true" POSITION="left" ID="ID_1749785700">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE">
 
@@ -128,9 +130,9 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Initial setup for myTempScripts feature in WikdShell Extension AddOn" ID="ID_561426163" CREATED="1607796467340" MODIFIED="1607796467340"/>
+<node TEXT="Initial setup for myTempScripts feature in WikdShell Extension AddOn" ID="ID_561426163"/>
 </node>
-<node TEXT="changes" FOLDED="true" POSITION="left" ID="ID_988937718" CREATED="1607796467340" MODIFIED="1607796467340">
+<node TEXT="changes" FOLDED="true" POSITION="left" ID="ID_988937718">
 <edge COLOR="#0000ff"/>
 <richcontent TYPE="NOTE">
 
@@ -145,11 +147,11 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="v0.1" ID="ID_653445305" CREATED="1607796467340" MODIFIED="1607796467340">
-<node TEXT="one time release&#xa;(Scripts related to this addon are in the WikdShell Extension AddOn)" ID="ID_1573232739" CREATED="1607796467340" MODIFIED="1607796467340"/>
+<node TEXT="v0.1" ID="ID_653445305">
+<node TEXT="one time release&#xa;(Scripts related to this addon are in the WikdShell Extension AddOn)" ID="ID_1573232739"/>
 </node>
 </node>
-<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1780336126" CREATED="1607796467340" MODIFIED="1607796467340">
+<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1780336126">
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="NOTE">
 
@@ -170,9 +172,9 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1510590397" CREATED="1607796467340" MODIFIED="1607796467340"/>
+<node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1510590397"/>
 </node>
-<node TEXT="preferences.xml" POSITION="left" ID="ID_535965792" CREATED="1607796467340" MODIFIED="1607796467340">
+<node TEXT="preferences.xml" POSITION="left" ID="ID_535965792">
 <edge COLOR="#ff00ff"/>
 <richcontent TYPE="NOTE">
 
@@ -191,7 +193,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="default.properties" POSITION="left" ID="ID_1087149275" CREATED="1607796467340" MODIFIED="1607796467340">
+<node TEXT="default.properties" POSITION="left" ID="ID_1087149275">
 <edge COLOR="#00ffff"/>
 <richcontent TYPE="NOTE">
 
@@ -215,7 +217,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="translations" FOLDED="true" POSITION="left" ID="ID_1261111447" CREATED="1607796467341" MODIFIED="1607796467341">
+<node TEXT="translations" FOLDED="true" POSITION="left" ID="ID_1261111447">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -241,22 +243,32 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="en" ID="ID_1139526756" CREATED="1607796467341" MODIFIED="1607796467341">
+<node TEXT="en" ID="ID_1139526756">
 <attribute_layout NAME_WIDTH="156.7499953284861 pt" VALUE_WIDTH="170.999994903803 pt"/>
 <attribute NAME="addons.${name}" VALUE="myTempScripts"/>
-<attribute NAME="addons.${name}.myTempScript01" VALUE="script 01"/>
-<attribute NAME="addons.${name}.myTempScript02" VALUE="script 02"/>
-<attribute NAME="addons.${name}.myTempScript03" VALUE="script 03"/>
-<attribute NAME="addons.${name}.myTempScript04" VALUE="script 04"/>
-<attribute NAME="addons.${name}.myTempScript05" VALUE="script 05"/>
-<attribute NAME="addons.${name}.myTempScript06" VALUE="script 06"/>
-<attribute NAME="addons.${name}.myTempScript07" VALUE="script 07"/>
-<attribute NAME="addons.${name}.myTempScript08" VALUE="script 08"/>
-<attribute NAME="addons.${name}.myTempScript09" VALUE="script 09"/>
-<attribute NAME="addons.${name}.myTempScript10" VALUE="script 10"/>
+<attribute NAME="addons.${name}.myTempScript01" VALUE="org.codehaus.groovy.runtime.GStringImpl|1. script 01" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;1. script 01|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript02" VALUE="org.codehaus.groovy.runtime.GStringImpl|2. script 02" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;2. script 02|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript03" VALUE="org.codehaus.groovy.runtime.GStringImpl|3. script 03" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;3. script 03|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript04" VALUE="org.codehaus.groovy.runtime.GStringImpl|4. script 04" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;4. script 04|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript05" VALUE="org.codehaus.groovy.runtime.GStringImpl|5. script 05" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;5. script 05|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript06" VALUE="org.codehaus.groovy.runtime.GStringImpl|6. script 06" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;6. script 06|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript07" VALUE="org.codehaus.groovy.runtime.GStringImpl|7. script 07" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;7. script 07|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript08" VALUE="org.codehaus.groovy.runtime.GStringImpl|8. script 08" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;8. script 08|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript09" VALUE="org.codehaus.groovy.runtime.GStringImpl|9. script 09" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;9. script 09|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript10" VALUE="org.codehaus.groovy.runtime.GStringImpl|10. script 10" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;10. script 10|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript11" VALUE="11. script 11"/>
+<attribute NAME="addons.${name}.myTempScript12" VALUE="12. script 12"/>
+<attribute NAME="addons.${name}.myTempScript13" VALUE="13. script 13"/>
+<attribute NAME="addons.${name}.myTempScript14" VALUE="14. script 14"/>
+<attribute NAME="addons.${name}.myTempScript15" VALUE="15. script 15"/>
+<attribute NAME="addons.${name}.myTempScript16" VALUE="16. script 16"/>
+<attribute NAME="addons.${name}.myTempScript17" VALUE="17. script 17"/>
+<attribute NAME="addons.${name}.myTempScript18" VALUE="18. script 18"/>
+<attribute NAME="addons.${name}.myTempScript19" VALUE="19. script 19"/>
+<attribute NAME="addons.${name}.myTempScript20" VALUE="20. script 20"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="left" ID="ID_482462672" CREATED="1607796467342" MODIFIED="1607796467342">
+<node TEXT="deinstall" POSITION="left" ID="ID_482462672">
 <edge COLOR="#00007c"/>
 <richcontent TYPE="NOTE">
 
@@ -282,10 +294,20 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript08.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript09.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript10.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript11.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript12.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript13.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript14.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript15.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript16.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript17.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript18.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript19.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript20.groovy"/>
 </node>
-<node TEXT="my scripts" POSITION="right" ID="ID_1688408217" CREATED="1607796467342" MODIFIED="1607796467342">
+<node TEXT="my scripts" POSITION="right" ID="ID_1688408217">
 <edge COLOR="#007c00"/>
-<node TEXT="change Attributes in selected script nodes" ID="ID_936568067" CREATED="1607796467342" MODIFIED="1607796467342"><richcontent TYPE="DETAILS">
+<node TEXT="change Attributes in selected script nodes" ID="ID_936568067"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -315,13 +337,16 @@
       nodos.findAll{it['menuTitleKey']}.each{ n -&gt;
     </p>
     <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.attributes.optimizeWidths()
+    </p>
+    <p>
       &nbsp;&nbsp;&nbsp;&nbsp;n['menuLocation']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= '/menu_bar/edoTools/addons.${name}'
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;n['executionMode']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'on_single_node'
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['keyboardShortcut']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'control shift '
+      &nbsp;&nbsp;&nbsp;&nbsp;//n['keyboardShortcut']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'control shift '
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_asking']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'true'
@@ -336,10 +361,58 @@
       &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_exec_restriction']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'false'
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_network_restriction']&nbsp;&nbsp;&nbsp;= 'false'&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;n['execute_scripts_without_network_restriction']&nbsp;&nbsp;&nbsp;= 'false'
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="change names in translation node" ID="ID_163185404"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def attMap =node.attributes.map
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      attMap.each{
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;if(it.key.startsWith('addons.${name}.myTempScript')) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def i = it.key[-2..-1]
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node[it.key] = &quot;${i.toInteger()}. script $i&quot;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
     </p>
     <p>
       }
@@ -349,7 +422,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="scripts" POSITION="right" ID="ID_1111400440" CREATED="1607796467343" MODIFIED="1607796467343">
+<node TEXT="scripts" POSITION="right" ID="ID_1111400440">
 <edge COLOR="#007c00"/>
 <richcontent TYPE="NOTE">
 
@@ -469,7 +542,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="myTempScript01.groovy" FOLDED="true" ID="ID_681389964" CREATED="1607796467343" MODIFIED="1607796467343">
+<node TEXT="myTempScript01.groovy" FOLDED="true" ID="ID_681389964">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript01"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -480,9 +553,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="&#xd;&#xa;def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xd;&#xa;&#xd;&#xa;ui.informationMessage(msg)&#xd;&#xa;" ID="ID_44206715" CREATED="1607796467353" MODIFIED="1607796467356"/>
+<node TEXT="&#xd;&#xa;def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xd;&#xa;&#xd;&#xa;ui.informationMessage(msg)&#xd;&#xa;" ID="ID_613129646"/>
 </node>
-<node TEXT="myTempScript02.groovy" FOLDED="true" ID="ID_640951557" CREATED="1607796467344" MODIFIED="1607796467344">
+<node TEXT="myTempScript02.groovy" FOLDED="true" ID="ID_640951557">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript02"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -493,9 +566,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1767868803" CREATED="1607796467357" MODIFIED="1607796467359"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_636227763"/>
 </node>
-<node TEXT="myTempScript03.groovy" FOLDED="true" ID="ID_1716834945" CREATED="1607796467345" MODIFIED="1607796467345">
+<node TEXT="myTempScript03.groovy" FOLDED="true" ID="ID_1716834945">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript03"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -506,9 +579,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_404845435" CREATED="1607796467360" MODIFIED="1607796467363"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_603573126"/>
 </node>
-<node TEXT="myTempScript04.groovy" FOLDED="true" ID="ID_370477269" CREATED="1607796467345" MODIFIED="1607796467345">
+<node TEXT="myTempScript04.groovy" FOLDED="true" ID="ID_370477269">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript04"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -519,9 +592,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_844426713" CREATED="1607796467364" MODIFIED="1607796467366"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_105639586"/>
 </node>
-<node TEXT="myTempScript05.groovy" FOLDED="true" ID="ID_1876752530" CREATED="1607796467346" MODIFIED="1607796467346">
+<node TEXT="myTempScript05.groovy" FOLDED="true" ID="ID_1876752530">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript05"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -532,9 +605,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1206699571" CREATED="1607796467367" MODIFIED="1607796467368"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1221051543"/>
 </node>
-<node TEXT="myTempScript06.groovy" FOLDED="true" ID="ID_586308847" CREATED="1607796467346" MODIFIED="1607796467346">
+<node TEXT="myTempScript06.groovy" FOLDED="true" ID="ID_586308847">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript06"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -545,9 +618,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_679000970" CREATED="1607796467370" MODIFIED="1607796467371"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_551245646"/>
 </node>
-<node TEXT="myTempScript07.groovy" FOLDED="true" ID="ID_714177272" CREATED="1607796467347" MODIFIED="1607796467347">
+<node TEXT="myTempScript07.groovy" FOLDED="true" ID="ID_714177272">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript07"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -558,9 +631,9 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_49417032" CREATED="1607796467372" MODIFIED="1607796467372"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_616444384"/>
 </node>
-<node TEXT="myTempScript08.groovy" FOLDED="true" ID="ID_1887939229" CREATED="1607796467348" MODIFIED="1607796467348">
+<node TEXT="myTempScript08.groovy" FOLDED="true" ID="ID_1887939229">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript08"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
@@ -571,36 +644,166 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1246792559" CREATED="1607796467373" MODIFIED="1607796467374"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1159524734"/>
 </node>
-<node TEXT="myTempScript09.groovy" FOLDED="true" ID="ID_429671571" CREATED="1607796467348" MODIFIED="1607796467348">
+<node TEXT="myTempScript09.groovy" FOLDED="true" ID="ID_429671571">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript09"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
-<attribute NAME="keyboardShortcut" VALUE="control shift 9"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_999176220" CREATED="1607796467374" MODIFIED="1607796467375"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_439177119"/>
 </node>
-<node TEXT="myTempScript10.groovy" FOLDED="true" ID="ID_1532686103" CREATED="1607796467349" MODIFIED="1607796467349">
+<node TEXT="myTempScript10.groovy" FOLDED="true" ID="ID_1532686103">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript10"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
-<attribute NAME="keyboardShortcut" VALUE="control shift 0"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_85407275" CREATED="1607796467375" MODIFIED="1607796467376"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_352949250"/>
+</node>
+<node TEXT="myTempScript11.groovy" FOLDED="true" ID="ID_1390468769">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript11"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="&#xd;&#xa;def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xd;&#xa;&#xd;&#xa;ui.informationMessage(msg)&#xd;&#xa;" ID="ID_460678967"/>
+</node>
+<node TEXT="myTempScript12.groovy" FOLDED="true" ID="ID_1036601289">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript12"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_534524159"/>
+</node>
+<node TEXT="myTempScript13.groovy" FOLDED="true" ID="ID_939104196">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript13"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1342843973"/>
+</node>
+<node TEXT="myTempScript14.groovy" FOLDED="true" ID="ID_1304726298">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript14"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_167114821"/>
+</node>
+<node TEXT="myTempScript15.groovy" FOLDED="true" ID="ID_1741194359">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript15"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_983958017"/>
+</node>
+<node TEXT="myTempScript16.groovy" FOLDED="true" ID="ID_1330088864">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript16"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1608862464"/>
+</node>
+<node TEXT="myTempScript17.groovy" FOLDED="true" ID="ID_1966347318">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript17"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_440632315"/>
+</node>
+<node TEXT="myTempScript18.groovy" FOLDED="true" ID="ID_1662907737">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript18"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1721046641"/>
+</node>
+<node TEXT="myTempScript19.groovy" FOLDED="true" ID="ID_550955978">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript19"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_1461340586"/>
+</node>
+<node TEXT="myTempScript20.groovy" FOLDED="true" ID="ID_1715728996">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.myTempScript20"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+<node TEXT="def msg = &quot;This command hasn&apos;t been assigned to a custom groovy script yet\n\nYou have to use the WikdShell Extension to assign a node script to it.&quot;&#xa;&#xa;ui.informationMessage(msg)" ID="ID_591488518"/>
 </node>
 </node>
-<node TEXT="lib" POSITION="right" ID="ID_1997648531" CREATED="1607796467350" MODIFIED="1607796467350">
+<node TEXT="lib" POSITION="right" ID="ID_1997648531">
 <edge COLOR="#7c007c"/>
 <richcontent TYPE="NOTE">
 
@@ -640,7 +843,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="zips" POSITION="right" ID="ID_1715961363" CREATED="1607796467350" MODIFIED="1607796467350">
+<node TEXT="zips" POSITION="right" ID="ID_1715961363">
 <edge COLOR="#007c7c"/>
 <richcontent TYPE="NOTE">
 
@@ -680,7 +883,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="images" POSITION="right" ID="ID_89934674" CREATED="1607796467350" MODIFIED="1607796467350">
+<node TEXT="images" POSITION="right" ID="ID_89934674">
 <edge COLOR="#7c7c00"/>
 <richcontent TYPE="NOTE">
 
