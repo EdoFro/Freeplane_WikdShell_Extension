@@ -106,6 +106,7 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="description" FOLDED="true" POSITION="left" ID="ID_1227561251">
 <edge COLOR="#ff0000"/>
@@ -130,7 +131,7 @@
 </richcontent>
 <node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146"/>
 </node>
-<node TEXT="changes" FOLDED="true" POSITION="left" ID="ID_1937374697">
+<node TEXT="changes" POSITION="left" ID="ID_1937374697">
 <edge COLOR="#0000ff"/>
 <richcontent TYPE="NOTE">
 
@@ -152,7 +153,7 @@
 <node TEXT="1. New button in console to load the script related to the selected node&#xa;2. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog&#xa;3. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))&#xa;4. Shows an *  in title if the script has been modified and not saved (or exported to node) (as &quot;dirty&quot; indicator)&#xa;5. Reorganizing the code in separate files&#xa;6. Added translations in spanish and almost german&#xa;7. Added icon for AddOn&#xa;8. libs builded into JAR file" ID="ID_681908861"/>
 </node>
 <node TEXT="v0.0.3" ID="ID_1003612997">
-<node TEXT="1. Added MyTempScripts feature&#xa;2. Some parameters were included as preferences" ID="ID_1670270859"/>
+<node TEXT="1. Added MyTempScripts feature&#xa;2. Some parameters were included as preferences&#xa;3. New behavior to Load from Node Button: now it gives the possibilty to append script from node to current script in editor pane&#xa;4. It recognizes if MyTempScripts Addon is installed and if FP has been restartet after it installation" ID="ID_1670270859"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_646377602">

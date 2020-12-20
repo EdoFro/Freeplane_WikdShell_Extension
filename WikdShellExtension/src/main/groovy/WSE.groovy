@@ -169,11 +169,16 @@ class WSE{
         def menuItemKey = "${root}${scriptKey}${sux}"
         // return menuItemKey
         def accion = getAction(menuItemKey)
-        def scriptFile = accion.scriptFile
-        def newLabel = "${nrScript + 1}. ${LabelFormat(proposedLabel)}"
-        scriptFile.text = scriptText
-        LabelAndMnemonicSetter.setLabelAndMnemonic(accion, newLabel )
-        changeLabelFromTempScript("${root}${scriptKey}", newLabel )
+        if(accion){
+            def scriptFile = accion.scriptFile
+            def newLabel = "${nrScript + 1}. ${LabelFormat(proposedLabel)}"
+            scriptFile.text = scriptText
+            LabelAndMnemonicSetter.setLabelAndMnemonic(accion, newLabel )
+            changeLabelFromTempScript("${root}${scriptKey}", newLabel )
+            return true
+        } else {
+            return false
+        }
     }
 
 //end
@@ -184,15 +189,18 @@ class WSE{
         def Map =[:]
         //def xmlFile = ScriptUtils.c().userDirectory.toString() +  xmlPath
 
-        String xmlString = new File(xmlFile).text
-        def addon = DOMBuilder.parse(new StringReader(xmlString)).documentElement
-        use(DOMCategory) {
-            def nodos = addon.translations.locale.entry.findAll{it.'@key'.startsWith("${root}${prex}")}
-            nodos.each{
-                Map[it.'@key'.reverse().takeBefore('.').reverse()] = it.text()
+        def fileXML =  new File(xmlFile)
+        if(fileXML.exists()){
+            String xmlString = fileXML.text
+            def addon = DOMBuilder.parse(new StringReader(xmlString)).documentElement
+            use(DOMCategory) {
+                def nodos = addon.translations.locale.entry.findAll{it.'@key'.startsWith("${root}${prex}")}
+                nodos.each{
+                    Map[it.'@key'.reverse().takeBefore('.').reverse()] = it.text()
+                }
             }
-        }
-        return Map
+            return Map
+        } else { return null }
     }
 
     private static void changeLabelFromTempScript(nomScript, newLabel){
@@ -215,7 +223,7 @@ class WSE{
     private static ExecuteScriptAction getAction(menuItemKey){ //TODO: revisar
         Entry menuItem = genericMenuStructure().findEntry(menuItemKey);
         //ojo: había una equivalente para reconocer el que está bajo el mouse
-        return new EntryAccessor().getAction(menuItem)
+        return menuItem?new EntryAccessor().getAction(menuItem):null
     }
 
     private static IUserInputListenerFactory userInputFactory() {
