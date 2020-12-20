@@ -29,7 +29,7 @@ class WikdExtension extends WikdShell {
     }
 
     static java.lang.String pregunta =  "Select destination node:"
-    static java.lang.String[] opciones = ["initial node","initial node","currently selected node","selected node when console's script was last applied"]
+    public java.lang.String[] opciones = ["initial node","initial node","currently selected node"]
 
     void addToNoteButton(){
         def menubar = this.getFrame().getJMenuBar();
@@ -54,9 +54,9 @@ class WikdExtension extends WikdShell {
                     case 2:
                         nodo = vars['c'].selected
                         break;
-                    case 3:
-                        nodo = vars['node']
-                        break;
+                    // case 3:
+                        // nodo = vars['node']
+                        // break;
                     default:
                         break;
                 }
@@ -96,9 +96,9 @@ class WikdExtension extends WikdShell {
                     case 2:
                         nodo = vars['c'].selected
                         break;
-                    case 3:
-                        nodo = vars['node']
-                        break;
+                    // case 3:
+                        // nodo = vars['node']
+                        // break;
                     default:
                        break;
                 }

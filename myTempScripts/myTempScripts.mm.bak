@@ -3,7 +3,7 @@
 <node TEXT="myTempScripts" FOLDED="false" ID="ID_1346135086" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -108,7 +108,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="description" FOLDED="true" POSITION="left" ID="ID_1749785700">
 <edge COLOR="#ff0000"/>
@@ -130,7 +129,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Initial setup for myTempScripts feature in WikdShell Extension AddOn" ID="ID_561426163"/>
 </node>
@@ -148,13 +146,12 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="v0.1" ID="ID_653445305">
 <node TEXT="one time release&#xa;(Scripts related to this addon are in the WikdShell Extension AddOn)" ID="ID_1573232739"/>
 </node>
 </node>
-<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1780336126">
+<node TEXT="license" POSITION="left" ID="ID_1780336126">
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="NOTE">
 
@@ -174,7 +171,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1510590397"/>
 </node>
@@ -195,7 +191,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="default.properties" POSITION="left" ID="ID_1087149275">
@@ -220,10 +215,9 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
-<node TEXT="translations" FOLDED="true" POSITION="left" ID="ID_1261111447">
+<node TEXT="translations" POSITION="left" ID="ID_1261111447">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -248,21 +242,20 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="en" ID="ID_1139526756">
 <attribute_layout NAME_WIDTH="156.7499953284861 pt" VALUE_WIDTH="170.999994903803 pt"/>
 <attribute NAME="addons.${name}" VALUE="myTempScripts"/>
-<attribute NAME="addons.${name}.myTempScript01" VALUE="1. script 01" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;1. script 01|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript02" VALUE="2. script 02" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;2. script 02|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript03" VALUE="3. script 03" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;3. script 03|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript04" VALUE="4. script 04" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;4. script 04|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript05" VALUE="5. script 05" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;5. script 05|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript06" VALUE="6. script 06" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;6. script 06|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript07" VALUE="7. script 07" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;7. script 07|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript08" VALUE="8. script 08" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;8. script 08|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript09" VALUE="9. script 09" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;9. script 09|number:decimal:#0.####"/>
-<attribute NAME="addons.${name}.myTempScript10" VALUE="10. script 10" OBJECT="org.freeplane.features.format.FormattedObject|org.codehaus.groovy.runtime.GStringImpl&amp;#x7c;10. script 10|number:decimal:#0.####"/>
+<attribute NAME="addons.${name}.myTempScript01" VALUE="1. script 01"/>
+<attribute NAME="addons.${name}.myTempScript02" VALUE="2. script 02"/>
+<attribute NAME="addons.${name}.myTempScript03" VALUE="3. script 03"/>
+<attribute NAME="addons.${name}.myTempScript04" VALUE="4. script 04"/>
+<attribute NAME="addons.${name}.myTempScript05" VALUE="5. script 05"/>
+<attribute NAME="addons.${name}.myTempScript06" VALUE="6. script 06"/>
+<attribute NAME="addons.${name}.myTempScript07" VALUE="7. script 07"/>
+<attribute NAME="addons.${name}.myTempScript08" VALUE="8. script 08"/>
+<attribute NAME="addons.${name}.myTempScript09" VALUE="9. script 09"/>
+<attribute NAME="addons.${name}.myTempScript10" VALUE="10. script 10"/>
 <attribute NAME="addons.${name}.myTempScript11" VALUE="11. script 11"/>
 <attribute NAME="addons.${name}.myTempScript12" VALUE="12. script 12"/>
 <attribute NAME="addons.${name}.myTempScript13" VALUE="13. script 13"/>
@@ -289,8 +282,8 @@
     </p>
   </body>
 </html>
-
 </richcontent>
+<attribute_layout NAME_WIDTH="45.74999863654379 pt" VALUE_WIDTH="299.2499910816553 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript01.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/myTempScript02.groovy"/>
@@ -379,7 +372,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="change names in translation node" ID="ID_163185404"><richcontent TYPE="DETAILS">
@@ -394,7 +386,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="NOTE">
 
@@ -419,7 +410,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def i = it.key[-2..-1]
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node[it.key] = &quot;${i.toInteger()}. script $i&quot;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node[it.key] = &quot;${i.toInteger().toString()}. script $i&quot;
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;}
@@ -429,7 +420,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -552,7 +542,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="myTempScript01.groovy" ID="ID_681389964">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
@@ -833,7 +822,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="zips" POSITION="right" ID="ID_1715961363">
@@ -874,7 +862,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="images" POSITION="right" ID="ID_89934674">
@@ -911,7 +898,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
