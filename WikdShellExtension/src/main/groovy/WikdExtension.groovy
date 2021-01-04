@@ -67,7 +67,7 @@ class WikdExtension extends WikdShell {
                     vars['targetNodeID'] = nodo.id
                     this.setDirty(false)
                     this.updateTitle()
-                    JOptionPane.showMessageDialog(null, "script text sended to:\n   note \n\nin node:\n   '$nodo.text'\n\n")
+                    // JOptionPane.showMessageDialog(null, "script text sended to:\n   note \n\nin node:\n   '$nodo.text'\n\n")
                 }
             }
         })
@@ -109,7 +109,7 @@ class WikdExtension extends WikdShell {
                     vars['targetNodeID'] = nodo.id
                     this.setDirty(false)
                     this.updateTitle()
-                    JOptionPane.showMessageDialog(null, "script text sended to:\n   'script1' attribute \n\nin node:\n   '$nodo.text'\n\n")
+                    // JOptionPane.showMessageDialog(null, "script text sended to:\n   'script1' attribute \n\nin node:\n   '$nodo.text'\n\n")
                 }
             }
         })
@@ -184,57 +184,6 @@ class WikdExtension extends WikdShell {
                         }
                        break;
                 }                
-
-                
-            // TODO: cambiar
-
-                    
-                //--    
-                    
-
-                
-            // -----
-            // TODO: cambiar
-                // int result = !dirty?JOptionPane.YES_OPTION:JOptionPane.showConfirmDialog(frame,"Do you want to load the script from the selected node in editor?\nAny unsaved change will be lost", "Load script from node",
-                    // JOptionPane.YES_NO_CANCEL_OPTION,
-                    // JOptionPane.QUESTION_MESSAGE);
-                // if(result == JOptionPane.YES_OPTION){
-                    // def vars = this.shell
-                    // def nodo = vars['c'].selected
-                    // def input   = ""
-                    // def source  = null
-                    // if (WSE.isGroovyNode(nodo)){
-                        // if ( WSE.extensionFromNodeFile(nodo) == 'groovy' ) {
-                            // input   = nodo.link.file
-                            // source  = 'file'
-                        // } else if ( nodo['script1']?true:false ){
-                            // input   = nodo['script1'].plain.toString().trim()   
-                            // source  = 'script1'    
-                        // } else if ( nodo.note ){
-                            // input   = nodo.note.toString()
-                            // source  = 'note'    
-                    // }
-                // }
-            
-                    // vars['source'] = source
-                    // vars['initialNodeID'] = nodo.id
-                    // vars['targetNodeID'] = nodo.id
-                    // opciones[0] = "Node '${nodo.text}'"
-            
-                    // switch(input?.class){
-                        // case File:
-                            // this.loadScriptFile(input)
-                            // break;
-                        // case String:
-                            // this.inputArea.setText(input + "\n\n\n")
-                            // break;
-                    // }
-                    // this.setDirty(false)                  
-                    // this.updateTitle()
-                // }
-                
-            // -----
-            
             }
         })
     }    

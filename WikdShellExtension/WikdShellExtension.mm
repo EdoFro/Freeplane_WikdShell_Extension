@@ -108,7 +108,7 @@
 </html>
 
 </richcontent>
-<node TEXT="description" FOLDED="true" POSITION="left" ID="ID_1227561251">
+<node TEXT="description" POSITION="left" ID="ID_1227561251">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE">
 
@@ -128,10 +128,11 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146"/>
 </node>
-<node TEXT="changes" POSITION="left" ID="ID_1937374697">
+<node TEXT="changes" FOLDED="true" POSITION="left" ID="ID_1937374697">
 <edge COLOR="#0000ff"/>
 <richcontent TYPE="NOTE">
 
@@ -145,15 +146,16 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="v0.0.1" ID="ID_816109358">
 <node TEXT="initial release" ID="ID_796313183"/>
 </node>
 <node TEXT="v0.0.2" ID="ID_1708602762">
-<node TEXT="1. New button in console to load the script related to the selected node&#xa;2. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog&#xa;3. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))&#xa;4. Shows an *  in title if the script has been modified and not saved (or exported to node) (as &quot;dirty&quot; indicator)&#xa;5. Reorganizing the code in separate files&#xa;6. Added translations in spanish and almost german&#xa;7. Added icon for AddOn&#xa;8. libs builded into JAR file" ID="ID_681908861"/>
+<node TEXT="1. New button in console to load the script related to the selected node&#xa;2. New command to open scripts related to menuItems in Freeplane UI menus using a SelectMenuItemDialog&#xa;3. Shows node in WikdShell title (node text from node where the actual script was loaded from (or saved to))&#xa;4. Shows an *  in title if the script has been modified and not saved (or exported to node) (as &quot;dirty&quot; indicator)&#xa;5. Reorganizing the code in separate files&#xa;6. Added translations in spanish and german&#xa;7. Added icon for AddOn&#xa;8. libs builded into JAR file" ID="ID_681908861"/>
 </node>
 <node TEXT="v0.0.3" ID="ID_1003612997">
-<node TEXT="1. Added MyTempScripts feature&#xa;2. Some parameters were included as preferences&#xa;3. New behavior to Load from Node Button: now it gives the possibilty to append script from node to current script in editor pane&#xa;4. It recognizes if MyTempScripts Addon is installed and if FP has been restartet after it installation" ID="ID_1670270859"/>
+<node TEXT="1. Added MyTempScripts feature&#xa;2. Some parameters were included as preferences&#xa;3. New behavior to Load from Node Button: now it gives the possibilty to append script from node to current script in editor pane&#xa;4. It recognizes if MyTempScripts Addon is installed and if FP has been restartet after its installation" ID="ID_1670270859"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_646377602">
@@ -176,6 +178,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1153422672"/>
 </node>
@@ -196,6 +199,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                           &lt;separator name = &quot;wikdShellExtension&quot;&gt;&#xa;                                    &lt;string name = &quot;wikdShellExtension_attributeForExtensions&quot; /&gt;&#xa;                                    &lt;boolean name = &quot;wikdShellExtension_fullScreen&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1596559844" MAX_WIDTH="20.0 cm"/>
 </node>
@@ -221,12 +225,13 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 <attribute_layout NAME_WIDTH="183.74999452382343 pt" VALUE_WIDTH="49.499998524785084 pt"/>
 <attribute NAME="wikdShellExtension_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="wikdShellExtension_fullScreen" VALUE="true"/>
 </node>
-<node TEXT="translations" FOLDED="true" POSITION="left" ID="ID_1830875841">
+<node TEXT="translations" POSITION="left" ID="ID_1830875841">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -251,6 +256,7 @@
     </ul>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="en" ID="ID_1684312874">
 <attribute_layout NAME_WIDTH="251.24999251216673 pt" VALUE_WIDTH="251.24999251216673 pt"/>
@@ -304,21 +310,24 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <attribute_layout NAME_WIDTH="45.74999863654379 pt" VALUE_WIDTH="333.7499900534752 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithWikdShell.groovy"/>
-<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openSampleMap.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openScriptFromMenu.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/WikdShellExtension.jar"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/wikdshell.jar"/>
-<attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Sample Map.mm"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension-icon.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/wikdShellExtension-screenshot-1.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/sendNodeScriptToTempMenu.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openGuideMap.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Guide Map.mm"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openSampleMap.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Sample Map.mm"/>
 </node>
-<node TEXT="scripts" FOLDED="true" POSITION="right" ID="ID_1411461009">
+<node TEXT="scripts" POSITION="right" ID="ID_1411461009">
 <edge COLOR="#007c00"/>
 <richcontent TYPE="NOTE">
 
@@ -437,6 +446,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="openWithWikdShell.groovy" ID="ID_1873361436">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
@@ -444,18 +454,6 @@
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE="control alt G"/>
-<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
-<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
-<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
-<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
-<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
-</node>
-<node TEXT="openSampleMap.groovy" ID="ID_684473611">
-<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
-<attribute NAME="menuTitleKey" VALUE="addons.${name}.openSampleMap"/>
-<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
-<attribute NAME="executionMode" VALUE="on_single_node"/>
-<attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
@@ -477,6 +475,18 @@
 <node TEXT="sendNodeScriptToTempMenu.groovy" ID="ID_1534418826">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="215.2499935850503 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.sendNodeScriptToTempMenu"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="openGuideMap.groovy" ID="ID_128130176">
+<attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.openSampleMap"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>
@@ -525,6 +535,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="WikdShellExtension.jar" ID="ID_803063352"/>
 <node TEXT="wikdshell.jar" ID="ID_1369271769"/>
@@ -567,6 +578,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="doc" ID="ID_180076950"/>
 </node>
@@ -604,6 +616,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="wikdShellExtension.png" ID="ID_512746522"/>
 <node TEXT="wikdShellExtension-icon.png" ID="ID_1201145963"/>
