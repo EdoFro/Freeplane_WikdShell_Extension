@@ -29,7 +29,7 @@ class WikdExtension extends WikdShell {
     }
 
     static java.lang.String pregunta =  "Select destination node:"
-    static java.lang.String[] opciones = ["initial node","initial node","currently selected node","selected node when console's script was last applied"]
+    public java.lang.String[] opciones = ["initial node","initial node","currently selected node"]
 
     void addToNoteButton(){
         def menubar = this.getFrame().getJMenuBar();
@@ -54,9 +54,9 @@ class WikdExtension extends WikdShell {
                     case 2:
                         nodo = vars['c'].selected
                         break;
-                    case 3:
-                        nodo = vars['node']
-                        break;
+                    // case 3:
+                        // nodo = vars['node']
+                        // break;
                     default:
                         break;
                 }
@@ -67,7 +67,7 @@ class WikdExtension extends WikdShell {
                     vars['targetNodeID'] = nodo.id
                     this.setDirty(false)
                     this.updateTitle()
-                    JOptionPane.showMessageDialog(null, "script text sended to:\n   note \n\nin node:\n   '$nodo.text'\n\n")
+                    // JOptionPane.showMessageDialog(null, "script text sended to:\n   note \n\nin node:\n   '$nodo.text'\n\n")
                 }
             }
         })
@@ -96,9 +96,9 @@ class WikdExtension extends WikdShell {
                     case 2:
                         nodo = vars['c'].selected
                         break;
-                    case 3:
-                        nodo = vars['node']
-                        break;
+                    // case 3:
+                        // nodo = vars['node']
+                        // break;
                     default:
                        break;
                 }
@@ -109,7 +109,7 @@ class WikdExtension extends WikdShell {
                     vars['targetNodeID'] = nodo.id
                     this.setDirty(false)
                     this.updateTitle()
-                    JOptionPane.showMessageDialog(null, "script text sended to:\n   'script1' attribute \n\nin node:\n   '$nodo.text'\n\n")
+                    // JOptionPane.showMessageDialog(null, "script text sended to:\n   'script1' attribute \n\nin node:\n   '$nodo.text'\n\n")
                 }
             }
         })
@@ -125,43 +125,65 @@ class WikdExtension extends WikdShell {
         menuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int result = !dirty?JOptionPane.YES_OPTION:JOptionPane.showConfirmDialog(frame,"Do you want to load the script from the selected node in editor?\nAny unsaved change will be lost", "Load script from node",
-                    JOptionPane.YES_NO_CANCEL_OPTION,
-                    JOptionPane.QUESTION_MESSAGE);
-                if(result == JOptionPane.YES_OPTION){
+            
+            // nueva version
                 def vars = this.shell
                 def nodo = vars['c'].selected
-                    def input   = ""
-                    def source  = null
-                    if (WSE.isGroovyNode(nodo)){
-                        if ( WSE.extensionFromNodeFile(nodo) == 'groovy' ) {
-                            input   = nodo.link.file
-                            source  = 'file'
-                        } else if ( nodo['script1']?true:false ){
-                            input   = nodo['script1'].plain.toString().trim()   
-                            source  = 'script1'    
-                        } else if ( nodo.note ){
-                            input   = nodo.note.toString()
-                            source  = 'note'    
-                    }
+                def input   = ""
+                def source  = null
+                def Q
+                def answerOption
+                def forceOptionPane = false
+                
+                if (WSE.isGroovyNode(nodo)&& WSE.extensionFromNodeFile(nodo) == 'groovy' ) {
+                    Q = "Do you want to load the script from the selected node in editor?\nAny unsaved changes will be lost"
+                    answerOption = JOptionPane.OK_CANCEL_OPTION                
+                } else {
+                    Q = "Do you want to erase editor area before loading the script from the selected node?\nAny unsaved changes will be lost\n\nYes: erase actual and load new\nNo: Append selected node's script to current script in editor\n"
+                    answerOption = JOptionPane.YES_NO_CANCEL_OPTION
+                    forceOptionPane = true
                 }
-            
-                    vars['source'] = source
-                    vars['initialNodeID'] = nodo.id
-                    vars['targetNodeID'] = nodo.id
-                    opciones[0] = "Node '${nodo.text}'"
-            
-                    switch(input?.class){
-                        case File:
-                            this.loadScriptFile(input)
-                            break;
-                        case String:
-                            this.inputArea.setText(input + "\n\n\n")
-                            break;
-                    }
-                    this.setDirty(false)                  
-                    this.updateTitle()
-                }
+                int result = !(dirty || forceOptionPane)?JOptionPane.YES_OPTION:JOptionPane.showConfirmDialog(frame,Q, "Load script from node",
+                    answerOption,
+                    JOptionPane.QUESTION_MESSAGE);                
+                
+                switch (result){
+                    case JOptionPane.YES_OPTION:  // assert JOptionPane.OK_OPTION == JOptionPane.YES_OPTION
+                        scriptFile = null
+                        if (WSE.isGroovyNode(nodo)){
+                            if ( WSE.extensionFromNodeFile(nodo) == 'groovy' ) {
+                                this.loadScriptFile(nodo.link.file)
+                                source  = 'file'
+                            } else if ( nodo['script1']?true:false ){
+                                this.inputArea.setText(nodo['script1'].plain.toString().trim() + "\n\n\n")
+                                source  = 'script1'    
+                            } else if ( nodo.note ){
+                                this.inputArea.setText(nodo.note.toString() + "\n\n\n")
+                                source  = 'note'    
+                            }
+                        }
+                        vars['source'] = source
+                        vars['initialNodeID'] = nodo.id
+                        vars['targetNodeID'] = nodo.id
+                        opciones[0] = "Node '${nodo.text}'"
+                        this.setDirty(false)                  
+                        this.updateTitle()
+                       break;
+                    case JOptionPane.NO_OPTION:
+                        if (WSE.isGroovyNode(nodo)){
+                            def texto = new StringBuilder()
+                            texto << this.inputArea.getText().toString() << "\n\n//========== appended from node '${nodo.text.take(30)}...' =============\n\n"
+                            if ( nodo['script1']?true:false ){
+                                texto << nodo['script1'].plain.toString().trim()
+                             } else if ( nodo.note ){
+                                texto << nodo.note.toString()
+                            }
+                            texto << "\n\n\n"
+                            this.inputArea.setText(texto.toString())
+                            this.setDirty(true)                  
+                        }
+                       break;
+                }                
             }
         })
     }    
@@ -170,7 +192,7 @@ class WikdExtension extends WikdShell {
 	void updateTitle() {
 		if (frame.properties.containsKey('title')) {
 			if (scriptFile != null)
-				frame.title = "$scriptFile.name ${(dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
+				frame.title = "File: $scriptFile.name ${(dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
 			else if (this.shell['targetNodeID'])
 				frame.title = "${opciones[0]} ${(dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
 			else
