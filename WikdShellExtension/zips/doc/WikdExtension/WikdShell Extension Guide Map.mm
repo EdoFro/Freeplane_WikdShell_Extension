@@ -1,6 +1,6 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="WikdShell Extension&#xa;Guide" FOLDED="false" ID="ID_1566103016" STYLE="oval">
+<node TEXT="WikdShell Extension&#xa;Guide" FOLDED="false" ID="ID_1566103016" BACKGROUND_COLOR="#98c2ff" STYLE="bubble" VGAP_QUANTITY="11.999999642372142 pt" BORDER_WIDTH="3.9999999999999996 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#3333ff">
 <font SIZE="18"/>
 <hook NAME="MapStyle">
     <conditional_styles>
@@ -77,11 +77,30 @@
 </map_styles>
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="HEADINGS"/>
-<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_352669836">
+<hook NAME="AutomaticEdgeColor" COUNTER="8" RULE="ON_BRANCH_CREATION"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for Freeplane users who wants to get
+    </p>
+    <p>
+      into scripting
+    </p>
+    <p>
+      v0.0.3
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="2. Commands" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_352669836">
 <edge COLOR="#ff0000"/>
 <node TEXT="in Freeplane Menu / Edo Tools" FOLDED="true" ID="ID_1085472" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
-<node TEXT="open With WikdShell" FOLDED="true" ID="ID_1187261389" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="open With WikdShell console" FOLDED="true" ID="ID_1187261389" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -95,7 +114,7 @@
 </html>
 </richcontent>
 <node TEXT="it loads the script from node" ID="ID_960375894"/>
-<node TEXT="if, when calling the command, the selected node has:" FOLDED="true" ID="ID_1632658801">
+<node TEXT="if, when calling the command, the selected node has:" ID="ID_1632658801">
 <node TEXT="a link to a groovy file" ID="ID_1812265287"/>
 <node TEXT="a &apos;script1&apos; attribute" ID="ID_1029761900"/>
 <node TEXT="or a groovy script in its note (*)" ID="ID_1123248821"><richcontent TYPE="NOTE">
@@ -132,7 +151,7 @@
 </node>
 <node TEXT="then the groovy console opens with that script in its editing pane" ID="ID_339862676"/>
 </node>
-<node TEXT="open Sample Map" FOLDED="true" ID="ID_1328836311" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="open Guide Map" FOLDED="true" ID="ID_1328836311" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -147,7 +166,7 @@
 </richcontent>
 <node TEXT="opens this map" ID="ID_1745439869"/>
 </node>
-<node TEXT="Edit script from menu" FOLDED="true" ID="ID_509823841" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+<node TEXT="Edit script from menu" FOLDED="true" ID="ID_509823841" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -161,6 +180,85 @@
 </html>
 </richcontent>
 <node TEXT="This command opens a dialog showing all menu items.&#xa;The user can use it to choose a menu item related to a script and its file will open in the groovy console." ID="ID_782072806"/>
+</node>
+<node TEXT="Save node script as TempScript" FOLDED="true" ID="ID_1233660484" STYLE="rectangle" MAX_WIDTH="140.2499956414105 pt" MIN_WIDTH="140.2499956414105 pt"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      menu command
+    </p>
+    <p>
+      new in v0.0.3
+    </p>
+  </body>
+</html>
+</richcontent>
+<node ID="ID_957692288">
+<icon BUILTIN="messagebox_warning"/>
+<richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for using this feature you have to install the &quot;<b>myTempScripts</b>&quot; addon first
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      the file is in the same webpage as this addon
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1878218753"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      With this command you can &quot;upload&quot; a groovy script that is stored in a node as a script in the <b>myTempScripts </b>menu
+    </p>
+  </body>
+</html>
+</richcontent>
+<node ID="ID_1915656411"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      the <b>myTempScriptMenu</b>&nbsp;has 20 slots that you can populate with your personal scripts
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="This way you can" ID="ID_650118351">
+<node TEXT="use it any time you want" ID="ID_965209906"/>
+<node TEXT="use it with any map" ID="ID_531607072"/>
+<node TEXT="assign a hot key combination to it" ID="ID_244818051"/>
+</node>
 </node>
 </node>
 <node TEXT="in WikdShell Groovy Console" FOLDED="true" ID="ID_279370205" MAX_WIDTH="197.249994300306 pt" MIN_WIDTH="197.249994300306 pt">
@@ -191,7 +289,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="options:" FOLDED="true" ID="ID_848571632"><richcontent TYPE="DETAILS">
+<node TEXT="options:" ID="ID_848571632"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -204,11 +302,11 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Select destination node:" FOLDED="true" ID="ID_691506876" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt">
+<node TEXT="Select destination node:" ID="ID_691506876" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt">
 <font BOLD="true"/>
-<node TEXT="Node &apos;xxx&apos;" FOLDED="true" ID="ID_574096632" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="Node &apos;xxx&apos;" ID="ID_574096632" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
-<node TEXT="the node where the script was last saved" ID="ID_702325878"><richcontent TYPE="NOTE">
+<node TEXT="the node where the script was last saved" ID="ID_702325878"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -216,23 +314,36 @@
   </head>
   <body>
     <p>
-      when opening WikdShell this node is the same as the initial node
+      when opening WikdShell, this node is the same as the initial node
     </p>
   </body>
 </html>
 </richcontent>
 </node>
 </node>
-<node TEXT="initial node" FOLDED="true" ID="ID_734608819" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="initial node" ID="ID_734608819" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
 <node TEXT="the script is exported to the node that was selected when you opened the WikdShell" ID="ID_1773629009"/>
 </node>
-<node TEXT="currently selected node" FOLDED="true" ID="ID_1091750308" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<node TEXT="currently selected node" ID="ID_1091750308" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
 <font BOLD="true"/>
-<node TEXT="the script is exported to the node that is currently selected node." ID="ID_1322712085"/>
+<node TEXT="the script is exported to the node that is currently selected." ID="ID_1322712085"/>
 </node>
-<node TEXT="selected node when console&apos;s script was last applied" FOLDED="true" ID="ID_1392271653" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
-<font BOLD="true"/>
+<node TEXT="selected node when console&apos;s script was last applied" ID="ID_1392271653" BACKGROUND_COLOR="#cccccc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6.0 pt" MAX_WIDTH="191.9999944567682 pt" MIN_WIDTH="191.9999944567682 pt">
+<font BOLD="true" STRIKETHROUGH="true"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Option deleted in v0.0.3
+    </p>
+  </body>
+</html>
+</richcontent>
 <node TEXT="the script is exported to the node that was selected the last time you run the script in the console" ID="ID_1695698895"><richcontent TYPE="NOTE">
 
 <html>
@@ -246,6 +357,7 @@
   </body>
 </html>
 </richcontent>
+<font STRIKETHROUGH="true"/>
 </node>
 </node>
 </node>
@@ -294,7 +406,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Loads the script from the selected node" ID="ID_1031602412"><richcontent TYPE="NOTE">
 
@@ -320,13 +431,12 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="First steps" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_51519781">
+<node TEXT="3. First steps" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_51519781">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="DETAILS">
 
@@ -341,6 +451,10 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="look in here for more information" ID="ID_920627414">
+<icon BUILTIN="idea"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#6666ff" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_352669836" STARTINCLINATION="-23;0;" ENDINCLINATION="23;41;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
 <node TEXT="editing an existing script in a node" FOLDED="true" ID="ID_73401960">
 <node TEXT="This node has a little script in its note --&gt;" ID="ID_1422462306">
 <node TEXT="Hello world dialog.groovy" ID="ID_1260831344"><richcontent TYPE="NOTE">
@@ -395,7 +509,20 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="1. select it and apply command &apos;Open with WikdShell Console&apos;" ID="ID_599775142"/>
+<node ID="ID_599775142"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      1. select it and apply command '<b>Open with WikdShell Console</b>'
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 <node TEXT="" ID="ID_1653713446">
 <hook NAME="FirstGroupNode"/>
 </node>
@@ -421,7 +548,20 @@
 </node>
 </node>
 </node>
-<node TEXT="4. send the edited script back to the node&apos;s note" ID="ID_1319307038"/>
+<node TEXT="4. send the edited script back to the node&apos;s note" ID="ID_1319307038"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      using the &quot;<b>send to node's NOTE</b>&quot; button
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 <node TEXT="5. close the console" ID="ID_1594786637"/>
 <node TEXT="6. repeat all again&#xa;but now save the script to this node --&gt;" ID="ID_1358467152">
 <node TEXT="edited Hello world dialog" ID="ID_844915556"/>
@@ -430,14 +570,163 @@
 <node TEXT="creating new script" FOLDED="true" ID="ID_1690753984">
 <node TEXT="1. create a new node &apos;myScript&apos;" ID="ID_1609996883"/>
 <node TEXT="2. select it and apply command &apos;Open with WikdShell Console&apos;" ID="ID_690300155"/>
-<node TEXT="3 create a new script" ID="ID_1773890128">
+<node TEXT="3. create a new script" ID="ID_1773890128">
 <node TEXT="//for example:&#xa;node.text = node.text.toUpperCase()" ID="ID_1576968386"/>
 </node>
-<node TEXT="4 send the edited script to the node" ID="ID_1700736465"/>
+<node TEXT="4. send the edited script to the node" ID="ID_1700736465"/>
+<node TEXT="5. close the console" ID="ID_210861406"/>
+</node>
+<node TEXT="uploading a script in a node as a tempScript" FOLDED="true" ID="ID_1912045228">
+<node ID="ID_976029659">
+<icon BUILTIN="messagebox_warning"/>
+<richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for this tutorial you have to install the &quot;<b>myTempScripts</b>&quot; addon first
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      the file is in the same webpage as this addon
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="1. select a node that has a script in it&#xa;(like this one---&gt;)" ID="ID_424918166">
+<node TEXT="Hello you.groovy" ID="ID_608481704"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      // this an example script:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def name = ui.showInputDialog(node.delegate, &quot;hi! What's your name?&quot;, &quot;Juliberto&quot;)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ui.informationMessage(&quot;Hello $name !!! Nice to meet you!!&quot;)
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
-<node TEXT="to node&apos;s Note or to &apos;script1&apos; attribute?" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_1134895826">
+<node ID="ID_407468108"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2. select it and apply command &quot;<b>Save node script as TempScript&quot;</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="3. select the &apos;slot&apos; where the script should be saved" ID="ID_1752375928">
+<node TEXT="for this example you can select the number 3" ID="ID_1675414397"/>
+</node>
+<node TEXT="4. press &quot;OK&quot; to close the dialog" ID="ID_144293344"/>
+<node ID="ID_250874093"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      5. execute the script by clicking on the command <b>Edo Tools / myTempScripts / Hello you</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1563253547"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      6. now execute the script by pressing <b><i>Ctrl + Shift + 3</i></b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="this way you can upload scripts to this list to the empty slots or reassigning used ones" ID="ID_1764157098"/>
+</node>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_1134895826"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      to node's <b><i><u>Note</u></i></b>&nbsp;or to <b><i><u>'script1' attribute</u></i></b>?
+    </p>
+  </body>
+</html>
+</richcontent>
 <edge COLOR="#ff0000"/>
+<font BOLD="true" ITALIC="false"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      which is better?
+    </p>
+  </body>
+</html>
+</richcontent>
 <node TEXT="node&apos;s Note" ID="ID_1039446">
 <node TEXT="" ID="ID_877639070">
 <icon BUILTIN="very_positive"/>
@@ -453,8 +742,34 @@
 <node TEXT="&apos;script1&apos; attribute" ID="ID_108868412">
 <node TEXT="" ID="ID_1235359369">
 <icon BUILTIN="very_positive"/>
-<node TEXT="you can directly run the script with command in menu Tools / Execute selected node script" ID="ID_786753897"/>
-<node TEXT="you can directly edit it and test it with command in menu Tools / Edit Scripts..." ID="ID_1458154775"/>
+<node ID="ID_786753897"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      you can directly run the script with command in menu <b>Tools / Execute selected node script</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1458154775"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      you can directly edit it and test it with command in menu <b>Tools / Edit Scripts...</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 <node TEXT="node&apos;s note can be used to take notes" ID="ID_1933989375"/>
 </node>
 <node TEXT="" ID="ID_1354532807">
@@ -462,12 +777,25 @@
 <node TEXT="you can&apos;t directly execute the script from one node to modify others." ID="ID_567304972"/>
 </node>
 </node>
-<node TEXT="I prefer to write the scripts in the node&apos;s note because it&apos;s easier for me to look at them using the note panel, but the &apos;script1&apos; attribute can be a better alternative in other cases" ID="ID_1820388139"/>
+<node TEXT="I prefer to write the scripts in the node&apos;s note because it&apos;s easier for me to look and edit them using the note panel, but the &apos;script1&apos; attribute can be a better alternative in other cases" ID="ID_1820388139"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      my personal opinion
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 <node TEXT="some example scripts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="right" ID="ID_1759050976">
 <edge COLOR="#ff0000"/>
 <node TEXT="just for fun" ID="ID_139385750">
-<node TEXT="modifing node&apos;s text" FOLDED="true" ID="ID_1699147842">
+<node TEXT="modifing node&apos;s text" ID="ID_1699147842">
 <node TEXT="reverse text from node&#xa;(script in Note)" ID="ID_1358363057"><richcontent TYPE="NOTE">
 
 <html>
@@ -901,7 +1229,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_369156413">
+<node TEXT="1. Description" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_369156413">
 <edge COLOR="#ff0000"/>
 <node ID="ID_1354189218"><richcontent TYPE="NODE">
 
@@ -943,8 +1271,115 @@
 </node>
 </node>
 </node>
+<node TEXT="Preferences" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_1015130374">
+<edge COLOR="#ff0000"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      new in v0.0.3
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="Attribute for file extensions" FOLDED="true" ID="ID_1591758757"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      My recomendation:
+    </p>
+    <p>
+      don't change it if you don't need to
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ... or change it as few times as posible.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      If not, you will have maps with multiple different attribute names and it will get a little messy
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="file_ext" ID="ID_1136057781"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      default
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="Open in full screen mode" FOLDED="true" ID="ID_1037505889"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      change it as you want. no restriction here
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="true" ID="ID_1211589454"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      default
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 <node TEXT="&apos;Groovy nodes&apos; and Formating" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_751311327">
 <edge COLOR="#ff0000"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      used in this map
+    </p>
+  </body>
+</html>
+</richcontent>
 <node TEXT="For this map I defined a node style for groovy nodes and a condtional formating rule to identify them:" ID="ID_306937081"/>
 <node TEXT="I defined a new user style" FOLDED="true" ID="ID_536457057"><richcontent TYPE="DETAILS">
 

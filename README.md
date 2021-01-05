@@ -11,12 +11,14 @@ The present Add-On (**WikdShell_Extension**) gives you the additional possibilit
 This way you can save all little tests, one time scripts or map specific scripts in your own organized way, **without overflowing** your scripts folders or **Freeplane's scripts submenu**.
 
 > [!IMPORTANT]
-> for this script to work, you need a **Freeplane** version equal or newer than **v1.8.10-pre06** or the stable version **v1.8.10**
+> for this script to work, you need a **Freeplane** version equal or newer than **v1.8.10**
 
 ## Install
 
 1. Get the latest version from **Freeplane** from [here](https://sourceforge.net/projects/freeplane/) and install it
 1. Download the latest version of the **WikdShell_Extension AddOn** from [here](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/)
+1. **Install it** (just open the addon map in Freeplane and follow the instructions)
+1. Download the **myTempScripts AddOn** from [here](https://github.com/EdoFro/Freeplane_WikdShell_Extension/releases/)
 1. **Install it** (just open the addon map in Freeplane and follow the instructions)
 1. **Restart Freeplane**
 
@@ -41,6 +43,22 @@ This way you can save all little tests, one time scripts or map specific scripts
 ### NEW in v0.0.2: Choose scripts to edit from menu item
 
 ![Edit script from menu](resources/Image004.png)
+
+---
+
+### NEW in v0.0.3: MyTempScripts
+
+#### Menu with temporary Scripts where you can load your scripts to
+
+![myTempScripts](resources/Image005.png)
+
+#### you can select a node that has a script and save it to the myTempScripts menu
+
+![command to myTempScripts](resources/Image006.png)
+
+#### ... then you choose which slot you want to use to save the script into
+
+![choosing which myTempScripts slot to use](resources/Image007.png)
 
 ---
 
@@ -98,9 +116,28 @@ This command opens the wikdShell Groovy console adding this functionalities to i
   - a '**script1**' attribute
   - or a groovy script in its **note** (\*)
 
+---
+
 ### Edit script from menu
 
 This command opens a dialog showing all menu items. The user can use it to choose a menu item related to a script and its file will open in the groovy console.
+
+---
+
+### Save node script as TempScript
+
+With this command you can "upload" a groovy script, that is stored in a node, as a script in the myTempScripts menu
+
+> [!TIP]
+> the myTempScriptMenu has 20 slots that you can populate with your personal scripts
+
+This way you can
+
+- use your script any time you want
+- use your script with any map
+- assign to your script a hot key combination
+
+---
 
 ## Examples
 
@@ -111,6 +148,14 @@ This command opens a dialog showing all menu items. The user can use it to choos
 ---
 
 ## history
+
+### v0.0.3
+
+1. Added MyTempScripts feature
+1. Some parameters were included as preferences
+1. New behavior to "**Load from Node**" Button:  
+    now it gives the possibilty to append the script from node to the current script in editor pane
+1. It recognizes if MyTempScripts Addon is installed and if FP has been restartet after its installation
 
 ### v0.0.2
 
@@ -127,7 +172,7 @@ This command opens a dialog showing all menu items. The user can use it to choos
 
 ### v0.0.1
 
-1. Initiaal release
+1. Initial release
 
 ## more information
 
