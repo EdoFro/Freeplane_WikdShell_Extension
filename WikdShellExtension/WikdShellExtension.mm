@@ -3,7 +3,7 @@
 <node TEXT="WikdShell Extension" FOLDED="false" ID="ID_275097868" LINK="https://github.com/EdoFro/Freeplane_WikdShell_Extension" BACKGROUND_COLOR="#97c7dc" STYLE="oval">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -128,7 +128,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="The WikdShell Extension add_on for Freeplane adds some functionalities to the original WikdShell add_on.&#xa;&#xa;WikdShell is a great add_on that gives the user the posibility to open a Groovy console directly from Freeplane to create, edit and try scripts that interact directly with the mindmaps.&#xa;This way you can add functionalities to Freeplane, automatize repetitive tasks and improve your productivity when using mindmaps.&#xa;&#xa;The present AddOn gives you the possibility to &quot;save&quot; the scripts you create as nodes in your maps. This way you can save all little tests, one time scripts or map specific scripts in your own organized way, without overflowing your scripts folders and Freeplane&apos;s scripts submenu." ID="ID_1996773146"/>
 </node>
@@ -146,7 +145,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="v0.0.1" ID="ID_816109358">
 <node TEXT="initial release" ID="ID_796313183"/>
@@ -178,7 +176,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="&#xa;This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the&#xa;GNU General Public License for more details.&#xa;" ID="ID_1153422672"/>
 </node>
@@ -199,7 +196,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                           &lt;separator name = &quot;wikdShellExtension&quot;&gt;&#xa;                                    &lt;string name = &quot;wikdShellExtension_attributeForExtensions&quot; /&gt;&#xa;                                    &lt;boolean name = &quot;wikdShellExtension_fullScreen&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1596559844" MAX_WIDTH="20.0 cm"/>
 </node>
@@ -225,7 +221,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <attribute_layout NAME_WIDTH="183.74999452382343 pt" VALUE_WIDTH="49.499998524785084 pt"/>
 <attribute NAME="wikdShellExtension_attributeForExtensions" VALUE="file_ext"/>
@@ -256,15 +251,14 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="en" ID="ID_1684312874">
 <attribute_layout NAME_WIDTH="251.24999251216673 pt" VALUE_WIDTH="251.24999251216673 pt"/>
 <attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
-<attribute NAME="addons.${name}.openWithWikdShell" VALUE="Open with WikdShell console"/>
-<attribute NAME="addons.${name}.openSampleMap" VALUE="Open sample map"/>
-<attribute NAME="addons.${name}.openScriptFromMenu" VALUE="Edit script from menu"/>
-<attribute NAME="addons.${name}.sendNodeScriptToTempMenu" VALUE="Save node script as TempScript"/>
+<attribute NAME="addons.${name}.1_openWithWikdShell" VALUE="Open with WikdShell console"/>
+<attribute NAME="addons.${name}.4_openGuideMap" VALUE="Qpen guide map"/>
+<attribute NAME="addons.${name}.2_openScriptFromMenu" VALUE="Edit script from menu"/>
+<attribute NAME="addons.${name}.3_sendNodeScriptToTempMenu" VALUE="Save node script as TempScript"/>
 <attribute NAME="OptionPanel.wikdShellExtension_attributeForExtensions" VALUE="Attribute for file extensions"/>
 <attribute NAME="OptionPanel.wikdShellExtension_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
 <attribute NAME="OptionPanel.wikdShellExtension_fullScreen" VALUE="Open in full Screen mode?"/>
@@ -274,10 +268,10 @@
 <node TEXT="es" ID="ID_1732933203">
 <attribute_layout NAME_WIDTH="167.24999501556172 pt" VALUE_WIDTH="133.49999602139007 pt"/>
 <attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
-<attribute NAME="addons.${name}.openWithWikdShell" VALUE="Abrir con consola WikdShell"/>
-<attribute NAME="addons.${name}.openSampleMap" VALUE="Abrir mapa ejemplo"/>
-<attribute NAME="addons.${name}.openScriptFromMenu" VALUE="Editar script desde menu"/>
-<attribute NAME="addons.${name}.sendNodeScriptToTempMenu" VALUE="Guardar script de nodo en menu TempScript"/>
+<attribute NAME="addons.${name}.1_openWithWikdShell" VALUE="Abrir con consola WikdShell"/>
+<attribute NAME="addons.${name}.4_openGuideMap" VALUE="Abrir mapa guía"/>
+<attribute NAME="addons.${name}.2_openScriptFromMenu" VALUE="Editar script desde menu"/>
+<attribute NAME="addons.${name}.3_sendNodeScriptToTempMenu" VALUE="Guardar script de nodo en menu TempScript"/>
 <attribute NAME="OptionPanel.wikdShellExtension_attributeForExtensions" VALUE="Atributo con extensiones de archivos"/>
 <attribute NAME="OptionPanel.wikdShellExtension_attributeForExtensions.tooltip" VALUE="Nombre del atributo donde se indica el tipo de extensi\u00F3n de archivo relacionada con el nodo"/>
 <attribute NAME="OptionPanel.wikdShellExtension_fullScreen" VALUE="Abrir en modo pantalla completa?"/>
@@ -285,12 +279,12 @@
 <attribute NAME="OptionPanel.separator.wikdShellExtension" VALUE="wikdShell Extension"/>
 </node>
 <node TEXT="de" ID="ID_1677975658">
-<attribute_layout NAME_WIDTH="251.24999251216673 pt" VALUE_WIDTH="251.24999251216673 pt"/>
+<attribute_layout NAME_WIDTH="245.99999266862892 pt" VALUE_WIDTH="182.24999456852692 pt"/>
 <attribute NAME="addons.${name}" VALUE="WikdShell Extension"/>
-<attribute NAME="addons.${name}.openWithWikdShell" VALUE="\u00D6ffnen mit WikdShell console"/>
-<attribute NAME="addons.${name}.openSampleMap" VALUE="Beispiel Map \u00F6ffnen"/>
-<attribute NAME="addons.${name}.openScriptFromMenu" VALUE="Script vom Menu bearbeiten"/>
-<attribute NAME="addons.${name}.sendNodeScriptToTempMenu" VALUE="Script von node als TempScript speichern"/>
+<attribute NAME="addons.${name}.1_openWithWikdShell" VALUE="\u00D6ffnen mit WikdShell console"/>
+<attribute NAME="addons.${name}.4_openGuideMap" VALUE="Hilfsmap \u00F6ffnen"/>
+<attribute NAME="addons.${name}.2_openScriptFromMenu" VALUE="Script vom Menu bearbeiten"/>
+<attribute NAME="addons.${name}.3_sendNodeScriptToTempMenu" VALUE="Script von node als TempScript speichern"/>
 <attribute NAME="OptionPanel.wikdShellExtension_attributeForExtensions" VALUE="Attribute f\u00FCr Dateinamenserweiterung "/>
 <attribute NAME="OptionPanel.wikdShellExtension_fullScreen" VALUE="\u00D6ffnen in Vollbildmodus?"/>
 <attribute NAME="OptionPanel.separator.wikdShellExtension" VALUE="wikdShell Extension"/>
@@ -310,9 +304,8 @@
     </p>
   </body>
 </html>
-
 </richcontent>
-<attribute_layout NAME_WIDTH="45.74999863654379 pt" VALUE_WIDTH="333.7499900534752 pt"/>
+<attribute_layout NAME_WIDTH="45.74999863654379 pt" VALUE_WIDTH="341.999989807606 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithWikdShell.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openScriptFromMenu.groovy"/>
@@ -326,6 +319,10 @@
 <attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Guide Map.mm"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openSampleMap.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/doc/WikdExtension/WikdShell Extension Sample Map.mm"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/1_openWithWikdShell.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/2_openScriptFromMenu.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/3_sendNodeScriptToTempMenu.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/4_openGuideMap.groovy"/>
 </node>
 <node TEXT="scripts" POSITION="right" ID="ID_1411461009">
 <edge COLOR="#007c00"/>
@@ -446,11 +443,10 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="openWithWikdShell.groovy" ID="ID_1873361436">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
-<attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithWikdShell"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.1_openWithWikdShell"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE="control alt G"/>
@@ -462,7 +458,7 @@
 </node>
 <node TEXT="openScriptFromMenu.groovy" ID="ID_416946908">
 <attribute_layout NAME_WIDTH="196.49999414384382 pt" VALUE_WIDTH="181.49999459087866 pt"/>
-<attribute NAME="menuTitleKey" VALUE="addons.${name}.openScriptFromMenu"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.2_openScriptFromMenu"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>
@@ -474,7 +470,7 @@
 </node>
 <node TEXT="sendNodeScriptToTempMenu.groovy" ID="ID_1534418826">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="215.2499935850503 pt"/>
-<attribute NAME="menuTitleKey" VALUE="addons.${name}.sendNodeScriptToTempMenu"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.3_sendNodeScriptToTempMenu"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>
@@ -486,7 +482,7 @@
 </node>
 <node TEXT="openGuideMap.groovy" ID="ID_128130176">
 <attribute_layout NAME_WIDTH="202.4999939650299 pt" VALUE_WIDTH="202.4999939650299 pt"/>
-<attribute NAME="menuTitleKey" VALUE="addons.${name}.openSampleMap"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.4_openGuideMap"/>
 <attribute NAME="menuLocation" VALUE="/menu_bar/edoTools/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>
@@ -535,7 +531,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="WikdShellExtension.jar" ID="ID_803063352"/>
 <node TEXT="wikdshell.jar" ID="ID_1369271769"/>
@@ -578,7 +573,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="doc" ID="ID_180076950"/>
 </node>
@@ -616,7 +610,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="wikdShellExtension.png" ID="ID_512746522"/>
 <node TEXT="wikdShellExtension-icon.png" ID="ID_1201145963"/>
