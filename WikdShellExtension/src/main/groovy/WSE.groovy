@@ -27,7 +27,7 @@ class WSE{
     static final String attributeForExtensions =  new ConfigProperties().getProperty('wikdShellExtension_attributeForExtensions','file_ext')
     static final Boolean fullScreen = new ConfigProperties().getBooleanProperty('wikdShellExtension_fullScreen')
 
-    static final String root = "addons.myTempScripts."
+    static final String root = "addons.myTempScripts"
     static final String prex = "myTempScript"
     static final String sux  = "_on_single_node"
     //static final String xmlPath = "/addons/myTempScripts.script.xml"
@@ -166,7 +166,7 @@ class WSE{
     def static saveToTempScript(nrScript, proposedLabel, scriptText, mapaScripts){
         def scriptKey = mapaScripts.keySet()[nrScript]
         //return scriptKey
-        def menuItemKey = "${root}${scriptKey}${sux}"
+        def menuItemKey = "${root}.${scriptKey}${sux}"
         // return menuItemKey
         def accion = getAction(menuItemKey)
         if(accion){
@@ -174,7 +174,7 @@ class WSE{
             def newLabel = "${nrScript + 1}. ${LabelFormat(proposedLabel)}"
             scriptFile.text = scriptText
             LabelAndMnemonicSetter.setLabelAndMnemonic(accion, newLabel )
-            changeLabelFromTempScript("${root}${scriptKey}", newLabel )
+            changeLabelFromTempScript("${root}.${scriptKey}", newLabel )
             return true
         } else {
             return false
@@ -194,7 +194,7 @@ class WSE{
             String xmlString = fileXML.text
             def addon = DOMBuilder.parse(new StringReader(xmlString)).documentElement
             use(DOMCategory) {
-                def nodos = addon.translations.locale.entry.findAll{it.'@key'.startsWith("${root}${prex}")}
+                def nodos = addon.translations.locale.entry.findAll{it.'@key'.startsWith("${root}.${prex}")}
                 nodos.each{
                     Map[it.'@key'.reverse().takeBefore('.').reverse()] = it.text()
                 }
@@ -220,7 +220,7 @@ class WSE{
 
 //region: interacting with menu
 
-    private static ExecuteScriptAction getAction(menuItemKey){ //TODO: revisar
+    def static ExecuteScriptAction getAction(menuItemKey){ //TODO: revisar
         Entry menuItem = genericMenuStructure().findEntry(menuItemKey);
         //ojo: había una equivalente para reconocer el que está bajo el mouse
         return menuItem?new EntryAccessor().getAction(menuItem):null
