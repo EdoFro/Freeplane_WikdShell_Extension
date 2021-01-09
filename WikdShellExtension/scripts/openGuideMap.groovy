@@ -1,6 +1,6 @@
 //opens help map with instructions and examples
 
-def helpFile = "WikdShell Extension Sample Map.mm"
+def helpFile = "WikdShell Extension Guide Map.mm"
 def docFolder = "WikdExtension"
 def dir = c.userDirectory.path
 def sep = File.separator
