@@ -79,7 +79,7 @@ class WSE{
         return ext?ext==extension:false
     }
 
-//end
+//end:
 
 //region: groovy Node
 
@@ -101,7 +101,7 @@ class WSE{
         return input
     }
     
-//end
+//end:
 
 //region: openWikdShell
 
@@ -137,7 +137,7 @@ class WSE{
         if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
-//end
+//end:
 
 //region: UI
 
@@ -154,7 +154,7 @@ class WSE{
         return (options as ArrayList).indexOf(result)
     }
 
-//end
+//end:
 
 //region: save to tempscript (number of script, new label, script text as string)
 
@@ -181,7 +181,7 @@ class WSE{
         }
     }
 
-//end
+//end:
 
 //region: interacting with addon.xml file
 
@@ -216,7 +216,7 @@ class WSE{
         new File(xmlOutputFile).text = XmlUtil.serialize(addon)
     }
 
-//end
+//end:
 
 //region: interacting with menu
 
@@ -241,7 +241,7 @@ class WSE{
         return texto
     }
 
-//end
+//end:
 
 
 
